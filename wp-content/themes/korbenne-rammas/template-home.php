@@ -16,7 +16,6 @@
             <label for='satellite'>satellite</label>
         </div>
 
-
 <script>
     // Initialise la map
     mapboxgl.accessToken = 'pk.eyJ1IjoiaG1lZGluaG8iLCJhIjoiY2szaDJieTZyMDdpNjNjcXRjaHU2cjkwdSJ9.--0qzHNFfaujaTjlMCeSjw';
@@ -473,3 +472,6 @@
             .addTo(map);
     });
 </script>
+
+<?php get_footer();
+
