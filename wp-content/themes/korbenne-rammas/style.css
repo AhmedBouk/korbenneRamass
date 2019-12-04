@@ -24,8 +24,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+
 }
 #menu {
     position: absolute;
