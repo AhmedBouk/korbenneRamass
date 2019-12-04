@@ -18,7 +18,7 @@
 								<div class="thumb-content"><a href="#.">FAQ</a></div>
 							</li>
 							<li>
-								<div class="thumb-content"><a href="#.">Charte de confidentialité</a></div>
+								<div class="thumb-content"><a href="#.">Mentions Légales</a></div>
 							</li>
 						</ul>
 					</div>
