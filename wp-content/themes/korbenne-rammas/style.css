@@ -24,5 +24,13 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: 80%;
+    height: 80%;
+}
+#menu {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 250px;
 }
