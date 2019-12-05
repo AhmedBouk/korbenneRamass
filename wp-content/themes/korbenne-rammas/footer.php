@@ -20,8 +20,8 @@
 
 				<div class="col-xs-12 col-sm-6 col-md-3">
 					<div class="widget subscribe no-box">
-						<h5 class="widget-title">KORBEN RAMASS'<span></span></h5>
-						<p>Service de localisation des bennes à verres.</p>
+						<img id= "logo" class="widget-title" src="<?php echo get_template_directory_uri(); ?> /assets/img/Korbenne-ramass.png" width= 300 height= 150><span></span>
+						<!-- <p>Service de localisation des bennes à verres.</p> -->
 					</div>
 				</div>
 
@@ -52,7 +52,7 @@
 					<div class="widget no-box">
 						<h5 class="widget-title">Contactez-nous<span></span></h5>
 
-						<p><a href="mailto:info@domain.com" title="glorythemes">korbenne@rammass.com</a></p>
+						<p><div class="mail"><a href="mailto:korbenne@rammass.com" title="glorythemes">korbenne@rammass.com</a></div></p>
 						<ul class="social-footer2">
 							<li class=""><a href="https://www.facebook.com/" target="_blank" title="Facebook"><img
 										alt="Facebook" width="30" height="30"

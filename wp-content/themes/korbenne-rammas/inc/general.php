@@ -37,13 +37,9 @@ add_action( 'after_setup_theme', 'korbenne_rammas_content_width', 0 );
 function korbenne_rammas_scripts() {
     wp_enqueue_style( 'korbenne-rammas-style', get_stylesheet_uri() );
 
-    wp_enqueue_script( 'korbenne-rammas-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+        wp_register_script('mapbox', get_template_directory_uri() . '/asset/js/mapbox.js', array(), '1.0.0');
+        wp_enqueue_script('mapbox');
 
-    wp_enqueue_script( 'korbenne-rammas-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-        wp_enqueue_script( 'comment-reply' );
-    }
 }
 add_action( 'wp_enqueue_scripts', 'korbenne_rammas_scripts' );
 
