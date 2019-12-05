@@ -149,7 +149,34 @@ footer{
 	bottom:0;
 	width:100%;
 	padding-top:50px;
-	height:50px;
+	height:0px;
+}
+
+.logo:hover{
+    animation: bounce .15s ease alternate;
+    animation-iteration-count: 4;
+
+}
+
+.navlink{
+    color:#F5C500;
+}
+
+.navlink:hover{
+    color:#16B84E;
+}
+.dropDownLink{
+    width:90%;
+    border-radius:5px;
+}
+.dropDownLink:hover{
+    color:#F5C500;
+    text-underline: #F5C500;
+}
+
+@keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(5px);}
 }
 
 /*==================== 
