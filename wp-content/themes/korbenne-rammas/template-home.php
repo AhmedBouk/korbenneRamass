@@ -2,7 +2,30 @@
 
 <?php get_header(); ?>
 
-</div><div id='map'></div>
+<div id='map'"></div>
+
+    <!-- <div class="favorites">
+
+    <h1>Mes Korbennes favorites</h1>
+    <ul>
+        <li>
+            <a href="#">Korbenne 1</a>
+        </li>
+        <li>
+            <a href="#">Korbenne 2</a>
+        </li>
+        <li>
+            <a href="#">Korbenne 3</a>
+        </li>
+        <li>
+            <a href="#">Korbenne 4</a>
+        </li>
+        <li>
+            <a href="#">Korbenne 5</a>
+        </li>
+    </ul>
+</div> -->
+
 <div id='menu'>
     <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
     <label for='streets'>Rues</label>
@@ -460,7 +483,7 @@
         // create a DOM element for the marker
         var el = document.createElement('div');
         el.className = 'marker';
-        el.style.backgroundImage = 'url(https://findicons.com/files/icons/2166/oxygen/48/document_properties.png)';
+        el.style.backgroundImage = 'url(wp-content/themes/korbenne-rammas/assets/img/bottles.png)';
         el.style.width = '48px';
         el.style.height = '48px';
 
