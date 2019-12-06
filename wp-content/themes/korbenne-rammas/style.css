@@ -16,26 +16,60 @@ Use it to make something cool, have fun, and share what you've learned with othe
 KORBENNE RAMMAS\' is based on Underscores https://korbenneramass.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
+/*==================== 
+	HEADER 
+====================== */
+
+.navbar{
+  background-color: #252525;
+}
+
+.logo:hover{
+  animation: bounce .15s ease alternate;
+  animation-iteration-count: 4;
+}
+
+.navlink{
+  color:#F5C500;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.navlink:hover{
+  color:#0b850b;
+}
+.dropDownLink{
+  background-color: #F5C500;
+  font-weight: bolder;
+}
+.dropDownLink:hover{
+  color:#000;
+  background-color: #0b850b;
+  font-weight: bolder;
+}
+
+@keyframes bounce{
+  from {transform: translateY(0);}
+  to   {transform: translateY(15px);}
+}
 
 /*==================== 
-  MAP CSS
+  MAP
 ====================== */
 
 #map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+    position: relative;
     width: 100%;
-
+    height: 100%;
 }
+
 #menu {
-    position: absolute;
-    background: #fff;
+    position: relative;
+    background: #222;
     padding: 10px;
+    color: #F5C500;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 250px;
 }
-
 
 /*==================== 
 	Footer 
@@ -71,7 +105,7 @@ footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255
 .footer- .logo {    display: inline-block;}
 
 /*==================== 
-	Widgets 
+	Widgets Footer
 ====================== */
 .widget{	padding: 20px;	margin-bottom: 40px;}
 .widget.widget-last{	margin-bottom: 0px;}
@@ -101,8 +135,8 @@ ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
 ul.social-footer2 li {display: inline-block;padding: 0;}
 ul.social-footer2 li a:hover {background-color:#F5C500;}
 ul.social-footer2 li a {display: block;	height:30px;width: 30px;text-align: center;}
-.btn{background-color: #F5C500; color:#fff;}
-.btn:hover, .btn:focus, .btn.active {background: #3cb371;color: #fff;
+.btn{font-weight: bolder; background-color: #F5C500; color:#000;}
+.btn:hover, .btn:focus, .btn.active {font-weight: bolder; background: #0b850b;color: #000;
 -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 -ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -124,7 +158,7 @@ transition: all 250ms ease-in-out 0s;
 }
 
 /*==================== 
-	Fix bottom 
+	Fix Footer bottom 
 ====================== */
 
 *{
@@ -145,38 +179,10 @@ body{
 }
 
 footer{
-	position:absolute;
+	position:relative;
 	bottom:0;
 	width:100%;
-	padding-top:50px;
 	height:0px;
-}
-
-.logo:hover{
-    animation: bounce .15s ease alternate;
-    animation-iteration-count: 4;
-
-}
-
-.navlink{
-    color:#F5C500;
-}
-
-.navlink:hover{
-    color:#16B84E;
-}
-.dropDownLink{
-    width:90%;
-    border-radius:5px;
-}
-.dropDownLink:hover{
-    color:#F5C500;
-    text-underline: #F5C500;
-}
-
-@keyframes bounce{
-    from {transform: translateY(0);}
-    to   {transform: translateY(5px);}
 }
 
 /*==================== 

@@ -1,22 +1,23 @@
 <?php /* Template Name: home */ ?>
-<?php get_header(); ?>
-<h1>Home</h1>
 
-        <div id='map'></div>
-        <div id='menu'>
-            <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
-            <label for='streets'>streets</label>
-            <input id='light-v10' type='radio' name='rtoggle' value='light'>
-            <label for='light'>light</label>
-            <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
-            <label for='dark'>dark</label>
-            <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
-            <label for='outdoors'>outdoors</label>
-            <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
-            <label for='satellite'>satellite</label>
-        </div>
+<?php get_header(); ?>
+
+</div><div id='map'></div>
+<div id='menu'>
+    <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
+    <label for='streets'>Rues</label>
+    <input id='light-v10' type='radio' name='rtoggle' value='light'>
+    <label for='light'>Thème jour</label>
+    <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
+    <label for='dark'>Thème nuit</label>
+    <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
+    <label for='outdoors'>Outdoors</label>
+    <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
+    <label for='satellite'>Vue Satellite</label>
+</div>
 
 <script>
+
     // Initialise la map
     mapboxgl.accessToken = 'pk.eyJ1IjoiaG1lZGluaG8iLCJhIjoiY2szaDJieTZyMDdpNjNjcXRjaHU2cjkwdSJ9.--0qzHNFfaujaTjlMCeSjw';
     var map = new mapboxgl.Map({
@@ -455,7 +456,8 @@
 
     // add markers to map
     geojson.features.forEach(function(marker) {
-// create a DOM element for the marker
+
+        // create a DOM element for the marker
         var el = document.createElement('div');
         el.className = 'marker';
         el.style.backgroundImage = 'url(https://findicons.com/files/icons/2166/oxygen/48/document_properties.png)';
@@ -471,6 +473,7 @@
             .setLngLat(marker.geometry.coordinates)
             .addTo(map);
     });
+
 </script>
 
 <?php get_footer();
