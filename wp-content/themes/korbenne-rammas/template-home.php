@@ -2,42 +2,54 @@
 
 <?php get_header(); ?>
 
-<div id='map'">    
-    <div class="favorites">
-        <h1>Mes Korbennes favorites</h1>
-        <ul>
-            <li>
-                <a href="#">Korbenne 1</a>
-            </li>
-            <li>
-                <a href="#">Korbenne 2</a>
-            </li>
-            <li>
-                <a href="#">Korbenne 3</a>
-            </li>
-            <li>
-                <a href="#">Korbenne 4</a>
-            </li>
-            <li>
-                <a href="#">Korbenne 5</a>
-            </li>
-        </ul>
+<div id="map-container">
+
+    <div class="leftSide">
+
+        <div>
+            <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=1412&f=5"></script>
+        </div>
+
+        <div class="favorites">
+            <h3>Mes Korbennes favorites</h1>
+            <ul>
+                <li>
+                    <a href="#">Korbenne 1</a>
+                </li>
+                <li>
+                    <a href="#">Korbenne 2</a>
+                </li>
+                <li>
+                    <a href="#">Korbenne 3</a>
+                </li>
+                <li>
+                    <a href="#">Korbenne 4</a>
+                </li>
+                <li>
+                    <a href="#">Korbenne 5</a>
+                </li>
+            </ul>
+        </div>
+
     </div>
+
+    <div id='map'"></div>
+
 </div>
 
+    <div id='menu'>
+        <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
+        <label for='streets'>Rues</label>
+        <input id='light-v10' type='radio' name='rtoggle' value='light'>
+        <label for='light'>Thème jour</label>
+        <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
+        <label for='dark'>Thème nuit</label>
+        <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
+        <label for='outdoors'>Outdoors</label>
+        <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
+        <label for='satellite'>Vue Satellite</label>
+    </div>
 
-<div id='menu'>
-    <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
-    <label for='streets'>Rues</label>
-    <input id='light-v10' type='radio' name='rtoggle' value='light'>
-    <label for='light'>Thème jour</label>
-    <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
-    <label for='dark'>Thème nuit</label>
-    <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
-    <label for='outdoors'>Outdoors</label>
-    <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
-    <label for='satellite'>Vue Satellite</label>
-</div>
 
 <script>
 
@@ -488,7 +500,7 @@
         el.style.height = '48px';
 
         el.addEventListener('click', function() {
-            window.alert(marker.properties.rue + marker.properties.type);
+            window.alert(marker.properties.rue);
         });
 
 // add marker to map
