@@ -199,7 +199,44 @@ footer{
   to   {transform: translateY(15px);}
 }
 
+/*====================
+	Blog part
+====================== */
+.wrapBlog {
+    background: white;
+    color: black;
+    width: 100%;
+    font-size: 1.3em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
 
+.blog-slide-title
+{
+    background: #252525;
+    width: 100%;
+    color: white;
+}
+.titleBlog
+{
+ color: #252525;
+}
+.parasingl
+{
+    color: white!important;
 
+}
+.parasingl a
+{
+    color: white!important;
 
+}
+.navigsingle a
+{
 
+    color: white;
+}
+.navigsingle
+{
+    color: white;
+   background: #252525;
+}
