@@ -228,15 +228,23 @@ footer{
 .parasingl a
 {
     color: white!important;
-
 }
 .navigsingle a
 {
-
     color: white;
+    font-size: 2em;
 }
 .navigsingle
 {
-    color: white;
+    color: #F5C500;
    background: #252525;
+}
+.paratitl
+{
+    color: #F5C500;
+
+}
+.paratitl
+{
+    border: solid #F5C500;
 }
