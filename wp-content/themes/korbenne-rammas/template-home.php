@@ -2,29 +2,29 @@
 
 <?php get_header(); ?>
 
-<div id='map'"></div>
+<div id='map'">    
+    <div class="favorites">
+        <h1>Mes Korbennes favorites</h1>
+        <ul>
+            <li>
+                <a href="#">Korbenne 1</a>
+            </li>
+            <li>
+                <a href="#">Korbenne 2</a>
+            </li>
+            <li>
+                <a href="#">Korbenne 3</a>
+            </li>
+            <li>
+                <a href="#">Korbenne 4</a>
+            </li>
+            <li>
+                <a href="#">Korbenne 5</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
-    <!-- <div class="favorites">
-
-    <h1>Mes Korbennes favorites</h1>
-    <ul>
-        <li>
-            <a href="#">Korbenne 1</a>
-        </li>
-        <li>
-            <a href="#">Korbenne 2</a>
-        </li>
-        <li>
-            <a href="#">Korbenne 3</a>
-        </li>
-        <li>
-            <a href="#">Korbenne 4</a>
-        </li>
-        <li>
-            <a href="#">Korbenne 5</a>
-        </li>
-    </ul>
-</div> -->
 
 <div id='menu'>
     <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>

@@ -54,6 +54,17 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 /*==================== 
+	Favorites 
+====================== */
+
+.favorites{
+  z-index: 10;
+  border-right: 3px solid #F5C500;
+  color:#F5C500;
+
+}
+
+/*==================== 
   MAP
 ====================== */
 
@@ -62,7 +73,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     width: 100%;
     height: 100%;
     display: flex;
-
+    border: 3px solid #F5C500;
+    display: flex;
 }
 
 #menu {
@@ -201,7 +213,3 @@ footer{
   from {transform: translateY(0);}
   to   {transform: translateY(15px);}
 }
-
-/*==================== 
-	Favorites 
-====================== */
