@@ -248,3 +248,19 @@ footer{
 {
     border: solid #F5C500;
 }
+.commentsingle
+{
+ color:  #F5C500;
+}
+.commentsingle p {
+    color: white;
+    font-size: 1.3em;
+}
+.site {
+    background: #252525;
+}
+.navigsingle a:hover
+{
+    color:  #F5C500;
+    font-size: 2em;
+}

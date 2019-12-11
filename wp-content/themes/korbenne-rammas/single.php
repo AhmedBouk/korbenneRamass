@@ -28,7 +28,7 @@ get_header();
 
 </div>
 		<div class="navigsingle"><?php the_post_navigation(); ?></div>
-        <div class="commentsingle" style=" background:  #252525; c ">
+        <div class="commentsingle">
             <?php
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
