@@ -16,7 +16,10 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-3">
 					<div class="widget subscribe no-box">
-						<img id= "logo" class="widget-title" src="<?php echo get_template_directory_uri(); ?> /assets/img/Korbenne-ramass.png" width= 300 height= 150><span></span>
+						<audio id="audio">
+							<source src="<?php echo get_template_directory_uri(); ?>/klaxon-SF.mp3">
+						</audio>
+						<img id= "logo" onmouseover="play();" class="widget-title" src="<?php echo get_template_directory_uri(); ?> /assets/img/Korbenne-ramass.png" width= 300 height= 150><span></span>
 						<!-- <p>Service de localisation des bennes à verres.</p> -->
 					</div>
 				</div>
@@ -38,7 +41,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-3">
 					<div class="widget no-box">
 						<h5 class="widget-title">VIP<span></span></h5>
-						<p>Inscrivez-vous pour avoir accès a des fonctionnalitées suplémentaire.</p>
+						<p>Inscrivez-vous afin avoir accès a des fonctionnalitées suplémentaire.</p>
 						<a class="btn" href="#." target="_blank">Inscription</a>
 					</div>
 				</div>

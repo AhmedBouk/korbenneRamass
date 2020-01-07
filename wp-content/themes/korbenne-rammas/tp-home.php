@@ -4,7 +4,7 @@
 
     <div id='map'"></div>
 
-    <!-- <div class="favorites">
+     <div class="favorites">
 
     <h1>Mes Korbennes favorites</h1>
     <ul>
@@ -24,7 +24,7 @@
             <a href="#">Korbenne 5</a>
         </li>
     </ul>
-</div> -->
+</div> 
 
     <div id='menu'>
         <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
@@ -500,5 +500,6 @@
     </script>
 
 <?php get_footer();
+
 
 
