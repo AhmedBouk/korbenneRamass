@@ -23,7 +23,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .navbar{
   background-color: #252525;
 }
-.navbar a:active, .navbar a:visited
+.navlink:active, .navlink:visited
 {
     color:#F5C500;
 }
@@ -42,10 +42,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 .dropDown{
-    background-color: #F5C500;
-}
-.dropDown a{
     color:black;
+    background-color: #F5C500;
 }
 .dropDownLink{
   background-color: #F5C500;
@@ -338,4 +336,8 @@ footer{
 #sidebar-header
 {
     order:1;
+}
+
+.dropDownLink a{
+    color:black;
 }
