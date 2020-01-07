@@ -37,9 +37,8 @@
 			<audio id="audio">
 				<source src="<?php echo get_template_directory_uri(); ?>/klaxon-SF.mp3">
 			</audio>
-                <a class="navbar-brand logo" onmouseover="play();" href="<?php echo esc_url(home_url('/'));?>">
-                    <img class="logo" src="<?php echo get_template_directory_uri(); ?> /assets/img/Korbenne-ramass.png" width="300" height="150">
-                </a>
+
+                <img class="logo" onmouseover="play();" src="<?php echo get_template_directory_uri(); ?> /assets/img/Korbenne-ramass.png" width="300" height="150" onclick="displaySidebar()">
                 <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('/'));?>">ACCUEIL <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('Blog'));?>">BLOG</a>
                 <div class="dropdown ml-md-auto">
@@ -121,4 +120,9 @@
 		
 	</header>
 </div>
+<aside style="display:none;" id="header-sidebar"><?php get_sidebar('Header') ?></aside>
+
+<script>function displaySidebar() {
+        document.getElementById('header-sidebar').style.cssText = 'display:inline;';
+    }</script>
 

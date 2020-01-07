@@ -43,3 +43,15 @@ function korbenne_rammas_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'korbenne_rammas_scripts' );
 
+function themename_widgets_init()
+{
+    register_sidebar(array(
+        'name' => __('Header Sidebar', 'theme_name'),
+        'id' => 'sidebar_header',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));
+}
+add_action( 'widgets_init', 'header_sidebar' );

@@ -202,7 +202,6 @@ footer{
   to   {transform: translateY(15px);}
 }
 
-<<<<<<< HEAD
 /*====================
 	Blog part
 ====================== */
@@ -268,8 +267,7 @@ footer{
     color:  #F5C500;
     font-size: 2em;
 }
-=======
-/*==================== 
-	Favorites 
-====================== */
->>>>>>> 828cf1418d07041cc87a030006b48e37d08eea14
+#sidebar-header
+{
+    order:1;
+}
