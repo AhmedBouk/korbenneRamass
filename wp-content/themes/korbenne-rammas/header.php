@@ -33,7 +33,7 @@
 
 	<header id="masthead" class="site-header">
 
-		<nav class="navbar navbar-expand-lg navbar-dark">
+		<nav class="navbar navbar-expand-md navbar-dark">
 			<audio id="audio">
 				<source src="<?php echo get_template_directory_uri(); ?>/klaxon-SF.mp3">
 			</audio>
@@ -42,7 +42,7 @@
 			</a>
 			<a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('/'));?>">ACCUEIL <span class="sr-only">(current)</span></a>
 			<a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('Blog'));?>">BLOG</a>
-			<div class="dropdown float-right">
+			<div class="dropdown navbar-collapse collapse w-100 order-3 dual-collapse2">
 				<a class="nav-item nav-link dropdown-toggle navlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ME CONNECTER</a>
 					<div class="nav-item dropdown-menu" aria-labelledby="navbarDropdown">
 						<a href="#" class="dropDownLink dropdown-item" data-toggle="modal" data-target="#logInModal">CONNEXION</a>
@@ -92,7 +92,24 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						//
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <small id="passwordHelpBlock" class="form-text text-muted">
+                                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces or special characters.
+                                </small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </form>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Sign Up</button>
