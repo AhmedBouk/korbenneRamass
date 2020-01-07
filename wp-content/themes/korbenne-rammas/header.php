@@ -37,20 +37,20 @@
 			<audio id="audio">
 				<source src="<?php echo get_template_directory_uri(); ?>/klaxon-SF.mp3">
 			</audio>
-			<a class="navbar-brand logo" onmouseover="play();" href="<?php echo esc_url(home_url('/'));?>">
-				<img class="logo" src="<?php echo get_template_directory_uri(); ?> /assets/img/Korbenne-ramass.png" width="300" height="150">
-			</a>
-			<a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('/'));?>">ACCUEIL <span class="sr-only">(current)</span></a>
-			<a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('Blog'));?>">BLOG</a>
-			<div class="dropdown navbar-collapse collapse w-100 order-3 dual-collapse2">
-				<a class="nav-item nav-link dropdown-toggle navlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ME CONNECTER</a>
-					<div class="nav-item dropdown-menu" aria-labelledby="navbarDropdown">
-						<a href="#" class="dropDownLink dropdown-item" data-toggle="modal" data-target="#logInModal">CONNEXION</a>
-							<div class="dropdown-divider"></div>
-						<a href="#" class="dropDownLink dropdown-item" data-toggle="modal" data-target="#signUpModal">DECONNEXION</a>
-					</div>
-			</div>
-		</nav>
+                <a class="navbar-brand logo" onmouseover="play();" href="<?php echo esc_url(home_url('/'));?>">
+                    <img class="logo" src="<?php echo get_template_directory_uri(); ?> /assets/img/Korbenne-ramass.png" width="300" height="150">
+                </a>
+                <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('/'));?>">ACCUEIL <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('Blog'));?>">BLOG</a>
+                <div class="dropdown ml-md-auto">
+                    <a class="nav-item nav-link dropdown-toggle navlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ME CONNECTER</a>
+                        <div class="nav-item dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="#" class="dropDownLink dropdown-item" data-toggle="modal" data-target="#logInModal">CONNEXION</a>
+                                <div class="dropdown-divider"></div>
+                            <a href="#" class="dropDownLink dropdown-item" data-toggle="modal" data-target="#signUpModal">INSCRIPTION</a>
+                        </div>
+                </div>
+        </nav>
 
 		<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
