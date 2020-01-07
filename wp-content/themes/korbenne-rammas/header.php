@@ -22,6 +22,7 @@
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css' type='text/css' />    
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="<?php echo get_template_directory_uri();?> /inc/js/sound.js"></script>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js'></script>
@@ -38,12 +39,12 @@
 				<source src="<?php echo get_template_directory_uri(); ?>/klaxon-SF.mp3">
 			</audio>
 
-                <img class="logo" onmouseover="play();" src="<?php echo get_template_directory_uri(); ?> /assets/img/Korbenne-ramass.png" width="300" height="150" onclick="displaySidebar()">
+                <img class="logo" onmouseover="play();" src="<?php echo get_template_directory_uri(); ?> /assets/img/Korbenne-ramass.png" width="260" height="130" onclick="displaySidebar()">
                 <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('/'));?>">ACCUEIL <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('Blog'));?>">BLOG</a>
                 <div class="dropdown ml-md-auto">
                     <a class="nav-item nav-link dropdown-toggle navlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ME CONNECTER</a>
-                        <div class="nav-item dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="nav-item dropdown-menu dropDown" aria-labelledby="navbarDropdown">
                             <a href="#" class="dropDownLink dropdown-item" data-toggle="modal" data-target="#logInModal">CONNEXION</a>
                                 <div class="dropdown-divider"></div>
                             <a href="#" class="dropDownLink dropdown-item" data-toggle="modal" data-target="#signUpModal">INSCRIPTION</a>
@@ -120,9 +121,3 @@
 		
 	</header>
 </div>
-<aside style="display:none;" id="header-sidebar"><?php get_sidebar('Header') ?></aside>
-
-<script>function displaySidebar() {
-        document.getElementById('header-sidebar').style.cssText = 'display:inline;';
-    }</script>
-

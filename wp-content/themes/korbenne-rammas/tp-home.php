@@ -4,37 +4,33 @@
 
 <div id="map-container">
 
-    <div class="leftSide">
-
-        <div>
+    <div class="leftSide d-flex">
+        <div >
             <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=1412&f=5"></script>
         </div>
-
-        <div class="favorites">
-            <h3>Mes Korbennes favorites</h1>
-            <ul>
-                <li>
-                    <a href="#">Korbenne 1</a>
-                </li>
-                <li>
-                    <a href="#">Korbenne 2</a>
-                </li>
-                <li>
-                    <a href="#">Korbenne 3</a>
-                </li>
-                <li>
-                    <a href="#">Korbenne 4</a>
-                </li>
-                <li>
-                    <a href="#">Korbenne 5</a>
-                </li>
-            </ul>
+        <div class="recents d-flex justify-content-center m-5">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">MES KORBENNES RÉCENTES</div>
+                <ul class="list-group list-group-flush">
+                    <li class="card-content list-group-item text-left">Korbenne 1 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 2 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 3 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="favorites d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">MES KORBENNES FAVORITES</div>
+                <ul class="list-group list-group-flush">
+                    <li class="card-content list-group-item text-left">Korbenne 1 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 2 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 3 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                </ul>
+            </div>
         </div>
 
     </div>
-
     <div id='map'"></div>
-
 </div>
 
     <div id='menu'>

@@ -23,29 +23,40 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .navbar{
   background-color: #252525;
 }
-
+.navbar a:active, .navbar a:visited
+{
+    color:#F5C500;
+}
+.navbar a:hover{
+    color:#0b850b;
+    font-weight: bolder;
+}
 .logo:hover{
   animation: bounce .15s ease alternate;
   animation-iteration-count: 4;
 }
 
 .navlink{
-  color:#F5C500;
   font-size: 1.5em;
   font-weight: bolder;
 }
 
-.navlink:hover{
-  color:#0b850b;
+.dropDown{
+    background-color: #F5C500;
+}
+.dropDown a{
+    color:black;
 }
 .dropDownLink{
   background-color: #F5C500;
   font-weight: bolder;
 }
 .dropDownLink:hover{
-  color:#000;
-  background-color: #0b850b;
-  font-weight: bolder;
+    background-color: #F5C500;
+}
+.dropdown-divider
+{
+    border-color:black;
 }
 
 @keyframes bounce{
@@ -75,12 +86,33 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 /*==================== 
-	Favorites 
+	Sidebar
 ====================== */
-
-.favorites{
-  color:#F5C500;
+.recents, .favorites
+{
+    font-weight: bold;
 }
+
+.recents a, .favorites a{
+    color: #F5C500;
+}
+
+.card
+{
+    background-color: #222;
+}
+.card-header{
+    background-color: #343434;
+    color:#F5C500;
+}
+.card-content{
+    background-color: #222;
+    color: white;
+}
+.card-content text{
+    color:white;
+}
+
 
 /*==================== 
   MAP
@@ -236,7 +268,6 @@ footer{
   from {transform: translateY(0);}
   to   {transform: translateY(15px);}
 }
-<<<<<<< HEAD
 
 /*====================
 	Blog part
@@ -303,9 +334,8 @@ footer{
     color:  #F5C500;
     font-size: 2em;
 }
+
 #sidebar-header
 {
     order:1;
 }
-=======
->>>>>>> 81e7f5c847ee700f52bdd408ac1e1b33834947b9
