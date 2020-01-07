@@ -488,29 +488,37 @@
             { "type": "Feature", "properties": { "gml_id": "mmm_pav_enterres_existants.394", "gid": "394", "num_col": "OMe158", "vol_col": "5", "proj_exist": "Existant", "type": "Ordures ménagères", "rue": "Rue Anatole France" }, "geometry": { "type": "Point", "coordinates": [ 3.876738047621908, 43.605896245798441 ] } }
         ]
     }
-
+    </script>
+    <div class="Guillaum">
+    <script>
     // add markers to map
     geojson.features.forEach(function(marker) {
 
         // create a DOM element for the marker
         var el = document.createElement('div');
+        el.setAttribute("id", "myKorb");
         el.className = 'marker';
         el.style.backgroundImage = 'url(wp-content/themes/korbenne-rammas/assets/img/bottles.png)';
-        el.style.width = '48px';
-        el.style.height = '48px';
+        el.style.width = '24px';
+        el.style.height = '40px';
   
+        var broum = document.createElement('BUTTON');
+        broum.setAttribute("id", "Myguigui");
+        broum.innerHTML ="CLICK me"; {
 
         el.addEventListener('click', function() {
-            window.alert(marker.properties.rue);
-        });
-
+            window.alert("Adresse : " + marker.properties.rue  +"\n" + "La KorBenne est de type : " +marker.properties.type);
+        }) 
+    };
+console.log(broum);
 // add marker to map
         new mapboxgl.Marker(el)
             .setLngLat(marker.geometry.coordinates)
             .addTo(map);
+        
     });
 
 </script>
-
+</div>
 <?php get_footer();
 
