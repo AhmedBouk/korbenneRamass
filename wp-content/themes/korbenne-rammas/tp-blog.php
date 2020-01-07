@@ -49,4 +49,7 @@
     </div>
 <?php get_footer();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 81e7f5c847ee700f52bdd408ac1e1b33834947b9

@@ -54,15 +54,50 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 /*==================== 
+	LeftSide 
+====================== */
+
+.leftSide{
+  display: flex;
+  flex-direction: column;
+}
+
+/*==================== 
+	Stats 
+====================== */
+
+.text{
+  color: #F5C500;
+}
+
+.widget_titre a {
+  color: #F5C500!important;
+}
+
+/*==================== 
+	Favorites 
+====================== */
+
+.favorites{
+  color:#F5C500;
+}
+
+/*==================== 
   MAP
 ====================== */
 
+#map-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
 #map {
     position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-
+    width: inherit;
+    height: inherit;
+    border: 5px solid #F5C500;
 }
 
 #menu {
@@ -70,7 +105,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     background: #222;
     padding: 10px;
     color: #F5C500;
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 /*==================== 
@@ -201,6 +236,7 @@ footer{
   from {transform: translateY(0);}
   to   {transform: translateY(15px);}
 }
+<<<<<<< HEAD
 
 /*====================
 	Blog part
@@ -271,3 +307,5 @@ footer{
 {
     order:1;
 }
+=======
+>>>>>>> 81e7f5c847ee700f52bdd408ac1e1b33834947b9
