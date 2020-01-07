@@ -1,4 +1,9 @@
 <?php /* Template Name: Blog */ ?>
+<<<<<<< HEAD
+=======
+
+<?php get_header(); ?>
+>>>>>>> 828cf1418d07041cc87a030006b48e37d08eea14
 
 <?php get_header(); ?>
 
