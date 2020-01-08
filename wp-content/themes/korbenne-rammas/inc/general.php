@@ -36,10 +36,11 @@ add_action( 'after_setup_theme', 'korbenne_rammas_content_width', 0 );
 
 function korbenne_rammas_scripts() {
     wp_enqueue_style( 'korbenne-rammas-style', get_stylesheet_uri() );
-
-        wp_register_script('mapbox', get_template_directory_uri() . '/asset/js/mapbox.js', array(), '1.0.0');
-        wp_enqueue_script('mapbox');
-
+ 
+            //js
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', get_template_directory_uri().'/assets/js/vendor/jquery.js', array(), '1.0.0');
+    wp_enqueue_script('jquery');
 }
 add_action( 'wp_enqueue_scripts', 'korbenne_rammas_scripts' );
 

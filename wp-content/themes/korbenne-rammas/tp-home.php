@@ -50,7 +50,22 @@
         <label for='satellite'>Vue Satellite</label>
     </div>
 
-
+    <nav id="listing-group" class="listing-group">
+<input type="checkbox" id="scrollZoom" checked="checked" />
+<label for="scrollZoom">Scroll zoom</label>
+<input type="checkbox" id="boxZoom" checked="checked" />
+<label for="boxZoom">Box zoom</label>
+<input type="checkbox" id="dragRotate" checked="checked" />
+<label for="dragRotate">Drag rotate</label>
+<input type="checkbox" id="dragPan" checked="checked" />
+<label for="dragPan">Drag pan</label>
+<input type="checkbox" id="keyboard" checked="checked" />
+<label for="keyboard">Keyboard</label>
+<input type="checkbox" id="doubleClickZoom" checked="checked" />
+<label for="doubleClickZoom">Double click zoom</label>
+<input type="checkbox" id="touchZoomRotate" checked="checked" />
+<label for="touchZoomRotate">Touch zoom rotate</label>
+</nav>
 <script>
 
     // Initialise la map
@@ -64,8 +79,10 @@
     // Ajout de la barre de recherche
     map.addControl(new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
-        mapboxgl: mapboxgl
+        mapboxgl: mapboxgl,
+      
     }));
+    console.log(map);
     // Ajout de la geolocalisation de l'utilisateur
     map.addControl(new mapboxgl.GeolocateControl({
         positionOptions: {
@@ -488,37 +505,54 @@
             { "type": "Feature", "properties": { "gml_id": "mmm_pav_enterres_existants.394", "gid": "394", "num_col": "OMe158", "vol_col": "5", "proj_exist": "Existant", "type": "Ordures ménagères", "rue": "Rue Anatole France" }, "geometry": { "type": "Point", "coordinates": [ 3.876738047621908, 43.605896245798441 ] } }
         ]
     }
-    </script>
-    <div class="Guillaum">
-    <script>
+  
     // add markers to map
     geojson.features.forEach(function(marker) {
 
         // create a DOM element for the marker
         var el = document.createElement('div');
-        el.setAttribute("id", "myKorb");
+        el.setAttribute("id", "mykorb");
         el.className = 'marker';
         el.style.backgroundImage = 'url(wp-content/themes/korbenne-rammas/assets/img/bottles.png)';
         el.style.width = '24px';
         el.style.height = '40px';
-  
-        var broum = document.createElement('BUTTON');
-        broum.setAttribute("id", "Myguigui");
-        broum.innerHTML ="CLICK me"; {
-
+        
         el.addEventListener('click', function() {
-            window.alert("Adresse : " + marker.properties.rue  +"\n" + "La KorBenne est de type : " +marker.properties.type);
-        }) 
-    };
-console.log(broum);
+            var txt = "clique ici";
+            setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+             .setHTML('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + '</p>'+'<p><button type="button">'+ txt +'</button></p>'))
+
+        })
+    ;
+
 // add marker to map
         new mapboxgl.Marker(el)
             .setLngLat(marker.geometry.coordinates)
+            .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+    .setHTML('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + '</p>'))
             .addTo(map);
         
     });
 
+    // interactions
+        document.getElementById('listing-group')
+        .addEventListener('change', function(e) {
+        var handler = e.target.id;
+        if (e.target.checked) {
+        map[handler].enable();
+        } else {
+        map[handler].disable();
+        }
+        });
+
+   // Direction
+         map.addControl(
+            new MapboxDirections({
+            accessToken: mapboxgl.accessToken
+            }),
+            'top-left'
+            );
 </script>
-</div>
+
 <?php get_footer();
 
