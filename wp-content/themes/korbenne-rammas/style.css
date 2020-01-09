@@ -117,6 +117,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .widget_planeto {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
 }
+
 /*==================== 
 	Sidebar
 ====================== */
@@ -133,6 +134,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .card
 {
     background-color: #222;
+    border: 1px solid #F5C500;
+
 }
 
 .card-header{
@@ -140,6 +143,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     color:#F5C500;
     font-weight:bold;
     text-align: center;
+    border-bottom: 1px solid #F5C500;
 }
 
 .card-content{

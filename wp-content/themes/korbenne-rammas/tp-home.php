@@ -7,8 +7,8 @@
     <div class="leftSide d-flex m-auto">
         <div class="euStats justify-content-center m-auto">
             <div class="card" style="width: 18rem;">
-                <div class="card-header">BOUTEILLES RECYCLÉES EN EUROPE</div>
-                <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=1412&f=5"></script>
+                <div class="card-header">KILOS DE VERRE RECYCLÉ EN FRANCE</div>
+                <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=1307&f=5"></script>
             </div>
         </div>
 
@@ -54,9 +54,6 @@
     <div id='map'"></div>
 </div>
 
-
-
-
 <script>
 
     // Initialise la map
@@ -64,7 +61,7 @@
     var map = new mapboxgl.Map({
         container: 'map', // container id
         style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-        center: [-74.50, 40], // starting position [lng, lat]
+        center: [3.8833, 43.6], // starting position [lng, lat]
         zoom: 9 // starting zoom
     });
     // Ajout de la barre de recherche
