@@ -4,10 +4,14 @@
 
 <div id="map-container">
 
-    <div class="leftSide d-flex">
-        <div >
-            <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=1412&f=5"></script>
+    <div class="leftSide d-flex m-auto">
+        <div class="euStats justify-content-center m-auto">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">BOUTEILLES RECYCLÉES EN EUROPE</div>
+                <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=1412&f=5"></script>
+            </div>
         </div>
+
         <div class="recents d-flex justify-content-center m-5">
             <div class="card" style="width: 18rem;">
                 <div class="card-header">MES KORBENNES RÉCENTES</div>
@@ -18,6 +22,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="favorites d-flex justify-content-center">
             <div class="card" style="width: 18rem;">
                 <div class="card-header">MES KORBENNES FAVORITES</div>
@@ -29,22 +34,27 @@
             </div>
         </div>
 
+        <div class="card m-5 text-left" style="width: 18rem;">
+            <div class="card-header">MODIFIER CARTE</div>
+            <div id='menu'>
+                <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
+                <label for='streets'>Rues</label></br>
+                <input id='light-v10' type='radio' name='rtoggle' value='light'>
+                <label for='light'>Thème jour</label></br>
+                <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
+                <label for='dark'>Thème nuit</label></br>
+                <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
+                <label for='outdoors'>Outdoors</label></br>
+                <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
+                <label for='satellite'>Vue Satellite</label>
+            </div>
+        </div>
+
     </div>
     <div id='map'"></div>
 </div>
 
-    <div id='menu'>
-        <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
-        <label for='streets'>Rues</label>
-        <input id='light-v10' type='radio' name='rtoggle' value='light'>
-        <label for='light'>Thème jour</label>
-        <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
-        <label for='dark'>Thème nuit</label>
-        <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
-        <label for='outdoors'>Outdoors</label>
-        <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
-        <label for='satellite'>Vue Satellite</label>
-    </div>
+
 
 
 <script>

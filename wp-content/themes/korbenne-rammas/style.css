@@ -69,6 +69,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .leftSide{
   display: flex;
   flex-direction: column;
+  clear:both;
 }
 
 /*==================== 
@@ -80,7 +81,17 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 .widget_titre a {
-  color: #F5C500!important;
+    color: #F5C500!important;
+    font-weight:bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    display:none;
+}
+
+.widget_titre img{
+    display:none;
 }
 
 /*==================== 
@@ -102,6 +113,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .card-header{
     background-color: #343434;
     color:#F5C500;
+    font-weight:bold;
+    text-align: center;
 }
 .card-content{
     background-color: #222;
@@ -110,8 +123,22 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .card-content text{
     color:white;
 }
+.widget_plus{
+    display:none;
+}
+.intro-section{
+    display:none;
+}
 
-
+.stat-chiffre{
+    background-color: #222;
+    border: #222;
+}
+.stat {
+    background-color: #222;
+    border: #222;
+    width:3em;!important
+}
 /*==================== 
   MAP
 ====================== */
@@ -340,4 +367,11 @@ footer{
 
 .dropDownLink a{
     color:black;
+}
+
+.widget_planeto_5{
+    border: #222;
+    background-color: #222;
+    width:50px;!important
+    border:10px solid #8385BB!important
 }
