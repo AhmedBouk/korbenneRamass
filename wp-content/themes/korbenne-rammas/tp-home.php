@@ -35,7 +35,7 @@
         </div>
 
         <div class="card m-5 text-left" style="width: 18rem;">
-            <div class="card-header">MODIFIER CARTE</div>
+            <div class="card-header">MODIFIER LA CARTE</div>
             <div id='menu'>
                 <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
                 <label for='streets'>Rues</label></br>
