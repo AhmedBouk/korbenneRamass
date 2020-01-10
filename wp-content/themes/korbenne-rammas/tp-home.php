@@ -506,6 +506,7 @@ get_header(); ?>
         el.style.backgroundImage = 'url(wp-content/themes/korbenne-rammas/assets/img/bottles.png)';
         el.style.width = '48px';
         el.style.height = '48px';
+  
 
         el.addEventListener('click', function() {
             window.alert(marker.properties.rue);
