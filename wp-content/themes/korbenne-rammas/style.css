@@ -40,6 +40,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 .navlink{
+  color: #F5C500;
   font-size: 1.5em;
   font-weight: bolder;
   color:#F5C500;
@@ -68,7 +69,20 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   from {transform: translateY(0);}
   to   {transform: translateY(15px);}
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 
+a:hover, a:active
+{
+    color:black;
+    text-decoration:none;
+    cursor:pointer;
+}
+button:active{
+    background-color: none;
+}
 /*==================== 
 	LeftSide 
 ====================== */
@@ -198,6 +212,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     width: inherit;
     height: inherit;
     border: 5px solid #F5C500;
+    z-index:auto;
 }
 
 #menu {
@@ -402,3 +417,84 @@ footer{
     color:  #F5C500;
     font-size: 2em;
 }
+
+
+
+.dropDownLink a{
+    color:black;
+}
+
+.widget_planeto_5{
+    border: #222;
+    background-color: #222;
+    width:50px;!important
+    border:10px solid #8385BB!important
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+.widget_planeto_5{
+    padding:0 auto!important;
+    border:white!important;
+}
+
+.stat, .widget{
+    padding:0!important;
+    border:white!important;
+}
+
+/* --------------------------
+    Login/Signup Forms
+   --------------------------- */
+
+form {
+    text-align: left;
+    border:#F5C500 .1px solid;
+    color:#F5C500;
+}
+form h3 {
+    margin: 3rem auto;
+    padding: 0 auto;
+}
+small {
+    color:#F0E68C!important;
+}
+form label{
+    margin-top: 3rem;
+}
+.form-control{
+    margin: 0 auto;
+    width:80%!important;
+}
+form .btn{
+    margin: 5rem auto;
+    width:40%;
+    border:none;
+}
+form .dropdown-divider{
+    border:#F5C500 1px solid;
+}
+.label{
+}
+
