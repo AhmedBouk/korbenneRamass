@@ -1,6 +1,6 @@
-<?php /* Template Name: home */
+<?php /* Template Name: home */ ?>
 
-get_header(); ?>
+<?php get_header(); ?>
 
 <div id="map-container">
 
@@ -12,28 +12,27 @@ get_header(); ?>
             </div>
         </div>
 
-           <div class="recents d-flex justify-content-center m-5">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">MES KORBENNES RÉCENTES</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="card-content list-group-item text-left">Korbenne 1 <a href="#"><i class="far fa-star ml-5"></i></a></li>
-                        <li class="card-content list-group-item text-left">Korbenne 2 <a href="#"><i class="far fa-star ml-5"></i></a></li>
-                        <li class="card-content list-group-item text-left">Korbenne 3 <a href="#"><i class="far fa-star ml-5"></i></a></li>
-                    </ul>
-                </div>
+        <div class="recents d-flex justify-content-center m-5">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">MES KORBENNES RÉCENTES</div>
+                <ul class="list-group list-group-flush">
+                    <li class="card-content list-group-item text-left">Korbenne 1 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 2 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 3 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                </ul>
             </div>
+        </div>
 
-            <div class="favorites d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">MES KORBENNES FAVORITES</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="card-content list-group-item text-left">Korbenne 1 <a href="#"><i class="far fa-star ml-5"></i></a></li>
-                        <li class="card-content list-group-item text-left">Korbenne 2 <a href="#"><i class="far fa-star ml-5"></i></a></li>
-                        <li class="card-content list-group-item text-left">Korbenne 3 <a href="#"><i class="far fa-star ml-5"></i></a></li>
-                    </ul>
-                </div>
+        <div class="favorites d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">MES KORBENNES FAVORITES</div>
+                <ul class="list-group list-group-flush">
+                    <li class="card-content list-group-item text-left">Korbenne 1 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 2 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 3 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                </ul>
             </div>
-
+        </div>
 
         <div class="card m-5 text-left" style="width: 18rem;">
             <div class="card-header">MODIFIER LA CARTE</div>
@@ -48,17 +47,13 @@ get_header(); ?>
                 <label for='outdoors'>Outdoors</label></br>
                 <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
                 <label for='satellite'>Vue Satellite</label>
-
             </div>
-        </nav>
+        </div>
 
     </div>
-
     <div id='map'"></div>
 </div>
-                  
 <script>
-                  
     // Initialise la map
     mapboxgl.accessToken = 'pk.eyJ1IjoiaG1lZGluaG8iLCJhIjoiY2szaDJieTZyMDdpNjNjcXRjaHU2cjkwdSJ9.--0qzHNFfaujaTjlMCeSjw';
     var map = new mapboxgl.Map({
@@ -82,16 +77,13 @@ get_header(); ?>
     // changer le style de la carte
     var layerList = document.getElementById('menu');
     var inputs = layerList.getElementsByTagName('input');
-
     function switchLayer(layer) {
         var layerId = layer.target.id;
         map.setStyle('mapbox://styles/mapbox/' + layerId);
     }
-
     for (var i = 0; i < inputs.length; i++) {
         inputs[i].onclick = switchLayer;
     }
-
     // ajout d'icon sur montpellier
     var geojson = {
         "type": "FeatureCollection",
@@ -494,28 +486,21 @@ get_header(); ?>
             { "type": "Feature", "properties": { "gml_id": "mmm_pav_enterres_existants.394", "gid": "394", "num_col": "OMe158", "vol_col": "5", "proj_exist": "Existant", "type": "Ordures ménagères", "rue": "Rue Anatole France" }, "geometry": { "type": "Point", "coordinates": [ 3.876738047621908, 43.605896245798441 ] } }
         ]
     }
-
     // add markers to map
     geojson.features.forEach(function(marker) {
-
         // create a DOM element for the marker
         var el = document.createElement('div');
         el.className = 'marker';
         el.style.backgroundImage = 'url(wp-content/themes/korbenne-rammas/assets/img/bottles.png)';
         el.style.width = '48px';
         el.style.height = '48px';
-  
         el.addEventListener('click', function() {
             window.alert(marker.properties.rue);
         });
-
-    // add marker to map
+// add marker to map
         new mapboxgl.Marker(el)
             .setLngLat(marker.geometry.coordinates)
             .addTo(map);
     });
-
 </script>
-
 <?php get_footer();
-
