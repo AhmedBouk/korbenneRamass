@@ -42,4 +42,3 @@ function korbenne_rammas_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'korbenne_rammas_scripts' );
-
