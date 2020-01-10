@@ -1,4 +1,5 @@
 <?php /* Template Name: signup */
+
 get_header(); ?>
 
 <div class="card" style="width: 50rem; margin:10% auto;">
@@ -22,7 +23,7 @@ get_header(); ?>
             <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <input class="btn" type="submit" value="Envoyer">
-        <button type="button" class="btn btn-primary"><a href="<?php echo esc_url(home_url('login'));?>">Se connecter</a><button>
+        <button type="button" class="btn btn-primary"><a href="<?php echo esc_url(home_url('login'));?>">Se connecter</a></button>
     </form>
 </div>
 
