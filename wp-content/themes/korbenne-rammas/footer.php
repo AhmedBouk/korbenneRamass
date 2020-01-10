@@ -50,7 +50,7 @@
 					<div class="widget no-box">
 						<h5 class="widget-title">Contactez-nous<span></span></h5>
 
-						<p><div class="mail"><a href="mailto:korbenne@ramass.com" title="glorythemes">korbenne@ramass.com</a></div></p>
+						<p><div class="mail"><a href="mailto:korbenne@rammass.com" title="glorythemes">korbenne@rammass.com</a></div></p>
 						<ul class="social-footer2">
 							<li class=""><a href="https://www.facebook.com/" target="_blank" title="Facebook"><img
 										alt="Facebook" width="30" height="30"

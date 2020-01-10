@@ -1,6 +1,6 @@
 <?php /* Template Name: login */
-get_header(); ?>
 
+get_header(); ?>
 <div class="card" style="width: 50rem; margin:8% auto;">
     <form>
         <h3>CONNEXION</h3>
