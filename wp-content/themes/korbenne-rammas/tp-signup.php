@@ -1,5 +1,4 @@
 <?php /* Template Name: signup */
-
 get_header(); ?>
 
 <div class="card" style="width: 50rem; margin:10% auto;">

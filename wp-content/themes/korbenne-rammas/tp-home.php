@@ -4,15 +4,13 @@ get_header(); ?>
 
 <div id="map-container">
 
-    <div class="wrapper">
-        <!-- Sidebar -->
-     <nav id="sidebar">
-            <!--<div class="euStats justify-content-center m-auto">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">BOUTEILLES RECYCLÉES EN EUROPE</div>
-                        <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=1412&f=5"></script>
-                </div>
-            </div>-->
+    <div class="leftSide d-flex m-auto">
+        <div class="euStats justify-content-center m-auto">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">KILOS DE VERRE RECYCLÉ EN FRANCE</div>
+                <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=1307&f=5"></script>
+            </div>
+        </div>
 
            <div class="recents d-flex justify-content-center m-5">
                 <div class="card" style="width: 18rem;">
@@ -36,20 +34,21 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div class="card m-5 text-left" style="width: 18rem;">
-                <div class="card-header">MODIFIER CARTE</div>
-                <div id='menu'>
-                    <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
-                    <label for='streets'>Rues</label></br>
-                    <input id='light-v10' type='radio' name='rtoggle' value='light'>
-                    <label for='light'>Thème jour</label></br>
-                    <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
-                    <label for='dark'>Thème nuit</label></br>
-                    <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
-                    <label for='outdoors'>Outdoors</label></br>
-                    <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
-                    <label for='satellite'>Vue Satellite</label>
-                </div>
+
+        <div class="card m-5 text-left" style="width: 18rem;">
+            <div class="card-header">MODIFIER LA CARTE</div>
+            <div id='menu'>
+                <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
+                <label for='streets'>Rues</label></br>
+                <input id='light-v10' type='radio' name='rtoggle' value='light'>
+                <label for='light'>Thème jour</label></br>
+                <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
+                <label for='dark'>Thème nuit</label></br>
+                <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
+                <label for='outdoors'>Outdoors</label></br>
+                <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
+                <label for='satellite'>Vue Satellite</label>
+
             </div>
         </nav>
 
@@ -57,16 +56,15 @@ get_header(); ?>
 
     <div id='map'"></div>
 </div>
-
-
-    <script>
-
+                  
+<script>
+                  
     // Initialise la map
     mapboxgl.accessToken = 'pk.eyJ1IjoiaG1lZGluaG8iLCJhIjoiY2szaDJieTZyMDdpNjNjcXRjaHU2cjkwdSJ9.--0qzHNFfaujaTjlMCeSjw';
     var map = new mapboxgl.Map({
         container: 'map', // container id
         style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-        center: [-74.50, 40], // starting position [lng, lat]
+        center: [3.8833, 43.6], // starting position [lng, lat]
         zoom: 9 // starting zoom
     });
     // Ajout de la barre de recherche
@@ -507,12 +505,11 @@ get_header(); ?>
         el.style.width = '48px';
         el.style.height = '48px';
   
-
         el.addEventListener('click', function() {
             window.alert(marker.properties.rue);
         });
 
-// add marker to map
+    // add marker to map
         new mapboxgl.Marker(el)
             .setLngLat(marker.geometry.coordinates)
             .addTo(map);

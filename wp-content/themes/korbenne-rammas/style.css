@@ -23,14 +23,17 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .navbar{
   background-color: #252525;
 }
+
 .navlink:active, .navlink:visited
 {
     color:#F5C500;
 }
+
 .navbar a:hover{
     color:#0b850b;
     font-weight: bolder;
 }
+
 .logo:hover{
   animation: bounce .15s ease alternate;
   animation-iteration-count: 4;
@@ -40,19 +43,23 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   color: #F5C500;
   font-size: 1.5em;
   font-weight: bolder;
+  color:#F5C500;
 }
 
 .dropDown{
     color:black;
     background-color: #F5C500;
 }
+
 .dropDownLink{
   background-color: #F5C500;
   font-weight: bolder;
 }
+
 .dropDownLink:hover{
     background-color: #F5C500;
 }
+
 .dropdown-divider
 {
     border-color:black;
@@ -100,17 +107,35 @@ button:active{
     text-align: center;
     text-transform: uppercase;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
     display:none;
+}
+
+.widget_planeto_5 {
+  border: white!important;
+  height: 150px!important;
+  text-align: left;
+}
+.widget_planeto_5 div.stat-group div.widget {
+    border: white!important;
+    padding-left: 0rem!important;
 }
 
 .widget_titre img{
     display:none;
 }
 
+.widget_planeto div.stat-group div.stat .stat-chiffre {
+    padding-top: 0px!important;
+}
+
+.widget_planeto {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
 /*==================== 
 	Sidebar
 ====================== */
+
 .recents, .favorites
 {
     font-weight: bold;
@@ -123,23 +148,31 @@ button:active{
 .card
 {
     background-color: #222;
+    border: 1px solid #F5C500;
+
 }
+
 .card-header{
     background-color: #343434;
     color:#F5C500;
     font-weight:bold;
     text-align: center;
+    border-bottom: 1px solid #F5C500;
 }
+
 .card-content{
     background-color: #222;
     color: white;
 }
+
 .card-content text{
     color:white;
 }
+
 .widget_plus{
     display:none;
 }
+
 .intro-section{
     display:none;
 }
@@ -148,11 +181,21 @@ button:active{
     background-color: #222;
     border: #222;
 }
+
 .stat {
     background-color: #222;
     border: #222;
-    width:3em;!important
 }
+
+#sidebar-header
+{
+    order:1;
+}
+
+.dropDownLink a{
+    color:black;
+}
+
 /*==================== 
   MAP
 ====================== */
@@ -261,7 +304,7 @@ transition: all 250ms ease-in-out 0s;
 .mail a {
   text-decoration: none;
   color: #fff;
-}
+} 
  .mail a:hover{
   color: #F5C500;
 }
@@ -376,6 +419,7 @@ footer{
 }
 
 
+
 .dropDownLink a{
     color:black;
 }
@@ -453,3 +497,4 @@ form .dropdown-divider{
 }
 .label{
 }
+
