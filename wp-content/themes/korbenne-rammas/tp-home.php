@@ -6437,7 +6437,7 @@
                             offset: 25
                         }) 
                         // add popups
-                        .setHTML('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + '</p>'))
+                    .setHTML('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + '</p> <button type="button">Click Me!</button>  <li><a href="https://example.com">Website</a></li>'))
                     .addTo(map);
 
             });
