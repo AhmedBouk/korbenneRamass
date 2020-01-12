@@ -49,7 +49,8 @@
             <label for='outdoors'>Outdoors</label>
             <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
             <label for='satellite'>Vue Satellite</label>
-            <div class=" option"><input class="option" type="button" value="Add to favorites"></div>
+            <div class=" optioon"><input class="optioon" type="button" value="Add to favorites"></div>
+         
 </div>
 
 
@@ -6424,8 +6425,13 @@
         el.style.backgroundImage = 'url(wp-content/themes/korbenne-rammas/assets/img/bottles.png)';
         el.style.width = '24px';
         el.style.height = '40px';
+        
         el.addEventListener('click', function() {
+            var propre = ('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + '</p>');
+            var myWindow = window.open("", "MsgWindow", "width=200,height=100");
+                 myWindow.document.write(propre);
 
+           console.log(propre);
         });
 
         // add marker to map
@@ -6435,16 +6441,9 @@
                     offset: 25
                 })
                 // add popups
-                .setHTML('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + '</p> <button type="button" class="fav">Click Me!</button>  <li><a href="https://example.com">Website</a></li>'))
+                .setHTML('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + '</p>    <div class=" option"><input class="option" type="button" value="Add to favorites"></div>  <li><a class="poire" href="https://example.com">Website</a></li>'))
                 .addTo(map);
 
-
-               // A $( document ).ready() block.
-                    $( document ).ready(function() {
-                         $( ".fav" ).click(function() {
-                            alert("Bonjour" );
-                          });
-                    });
 
     });
 
