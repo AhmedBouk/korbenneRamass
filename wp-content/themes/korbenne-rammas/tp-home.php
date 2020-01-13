@@ -54,6 +54,9 @@
     <div id='map'"></div>
 </div>
 <script>
+   
+
+ 
     // Initialise la map
     mapboxgl.accessToken = 'pk.eyJ1IjoiaG1lZGluaG8iLCJhIjoiY2szaDJieTZyMDdpNjNjcXRjaHU2cjkwdSJ9.--0qzHNFfaujaTjlMCeSjw';
     var map = new mapboxgl.Map({
@@ -63,7 +66,7 @@
         zoom: 9 // starting zoom
     });
 
-
+    
     // Ajout de la barre de recherche
     map.addControl(new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
@@ -6418,7 +6421,7 @@
         el.style.width = '24px';
         el.style.height = '40px';
         el.addEventListener('click', function() {
-            var propre = ('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + '</p>');
+            var propre = ('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + "  " + marker.geometry.coordinates + '</p><button id="benne">ajouté</button>');
             var myWindow = window.open("", "MsgWindow", "width=200,height=100");
                  myWindow.document.write(propre);
 
@@ -6433,19 +6436,51 @@
                     offset: 25
                 })
                 // add popups
-                .setHTML('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + '</p>    <div class=" option"><input class="option" type="button" value="Add to favorites"></div>  <li><a class="poire" href="https://example.com">Website</a></li>'))
+                .setHTML('<p class="info">Adresse : </p> <p class="infoMarker">' + marker.properties.rue + '</p> <p class="info">Type de Benne :</p> <p class="infoMarker">' + marker.properties.type  ))
                 .addTo(map);
 
     });
     // Direction
     map.addControl(
-        new MapboxDirections({
+       direction = new MapboxDirections({
             accessToken: mapboxgl.accessToken,
             interactive: false,
-
+            language: 'fr',
+            unit: 'metric',
+            placeholderOrigin : "De : "  ,
+            placeholderDestination :'À : '
+     
         }),
-        'top-left'
+        'bottom-left'
     );
+ // A $( document ).ready() block.
+$( document ).ready(function() {
+    $( "#benne" ).click(function() {
+console.log('test');
+});
+});
+// recuperer la geolocalisation autamiquement 
+// var options = {
+//   enableHighAccuracy: true,
+//   timeout: 5000,
+//   maximumAge: 0
+// };
+
+// function success(pos) {
+//   var crd = pos.coords;
+//   console.log(crd.latitude);
+//   console.log('Votre position actuelle est :');
+//   console.log(`Latitude : ${crd.latitude}`);
+//   console.log(`Longitude : ${crd.longitude}`);
+//   console.log(`La précision est de ${crd.accuracy} mètres.`);
+// }
+
+// function error(err) {
+//   console.warn(`ERREUR (${err.code}): ${err.message}`);
+// }
+
+// navigator.geolocation.getCurrentPosition(success, error, options);
+
 
 </script>
 

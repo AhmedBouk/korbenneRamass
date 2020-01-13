@@ -339,20 +339,29 @@ footer{
 /*==================== 
 pop up
 ====================== */
-  .mapboxgl-popup {
+  /* .mapboxgl-popup {
     max-width: 500px;
-    background:yellow;
-  }
+    background:red;
+  } */
   
   .mapboxgl-popup-content {
-    text-align: center;
-    color: white;
+  
+    color: black;
     font-family: 'Open Sans', sans-serif;
     background: yellow;
+    border: 4mm ridge #f2e66a;
+    width: 250px;
     
   }
 
-  
+  .info{
+      font-weight: bold ;
+      font-size: 1.5em;
+  }
+  .infoMarker{
+      text-transform: capitalize;
+      font-size: 1.5em;
+  }
 
 /*====================
 	Blog part
