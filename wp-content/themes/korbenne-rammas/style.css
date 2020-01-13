@@ -334,6 +334,26 @@ footer{
   to   {transform: translateY(15px);}
 }
 
+
+  
+/*==================== 
+pop up
+====================== */
+  .mapboxgl-popup {
+    max-width: 500px;
+    background:yellow;
+  }
+  
+  .mapboxgl-popup-content {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background: yellow;
+    
+  }
+
+  
+
 /*====================
 	Blog part
 ====================== */
@@ -443,3 +463,4 @@ a:hover, a:active
     text-decoration:none;
     cursor:pointer;
 }
+
