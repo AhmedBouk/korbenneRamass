@@ -10,27 +10,36 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
-		<?php
+
+<div class="contentsingl" style="background: #252525 ;  width: 100%; font-size: 1.2em;">
+    	<?php
 		while ( have_posts() ) :
-			the_post();
+			the_post(); { ?>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4"><?= the_post_thumbnail(); ?></div>
+                    <div class="col-8 paratitl" ><h2><?= get_the_title()  ; ?></h2>
+                    <div class="parasingl"><P><?= get_the_content(); ?></P></div></div>
+                </div>
+             </div>
+        <?php
+			}; ?>
 
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation();
-
+</div>
+		<div class="navigsingle"><?php the_post_navigation(); ?></div>
+        <div class="commentsingle">
+            <?php
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
 
 		endwhile; // End of the loop.
-		?>
+            ?>
+        </div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+
 
 <?php
 get_sidebar();

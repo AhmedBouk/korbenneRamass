@@ -9,13 +9,10 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: korbenne-ramass
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
 KORBENNE RAMMAS\' is based on Underscores https://korbenneramass.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
 /*==================== 
 	HEADER 
 ====================== */
@@ -24,28 +21,44 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   background-color: #252525;
 }
 
+.navlink:active, .navlink:visited
+{
+    color:#F5C500;
+}
+
+.navbar a:hover{
+    color:#0b850b;
+    font-weight: bolder;
+}
+
 .logo:hover{
   animation: bounce .15s ease alternate;
   animation-iteration-count: 4;
 }
 
 .navlink{
-  color:#F5C500;
   font-size: 1.5em;
   font-weight: bolder;
+  color:#F5C500;
 }
 
-.navlink:hover{
-  color:#0b850b;
+.dropDown{
+    color:black;
+    background-color: #F5C500;
 }
+
 .dropDownLink{
   background-color: #F5C500;
   font-weight: bolder;
 }
+
 .dropDownLink:hover{
-  color:#000;
-  background-color: #0b850b;
-  font-weight: bolder;
+    background-color: #F5C500;
+}
+
+.dropdown-divider
+{
+    border-color:black;
 }
 
 @keyframes bounce{
@@ -60,6 +73,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .leftSide{
   display: flex;
   flex-direction: column;
+  clear:both;
 }
 
 /*==================== 
@@ -71,15 +85,98 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 .widget_titre a {
-  color: #F5C500!important;
+    color: #F5C500!important;
+    font-weight:bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display:none;
+}
+
+.widget_planeto_5 {
+  border: white!important;
+  height: 150px!important;
+  text-align: left;
+}
+.widget_planeto_5 div.stat-group div.widget {
+    border: white!important;
+    padding-left: 0rem!important;
+}
+
+.widget_titre img{
+    display:none;
+}
+
+.widget_planeto div.stat-group div.stat .stat-chiffre {
+    padding-top: 0px!important;
+}
+
+.widget_planeto {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
 }
 
 /*==================== 
-	Favorites 
+	Sidebar
 ====================== */
 
-.favorites{
-  color:#F5C500;
+.recents, .favorites
+{
+    font-weight: bold;
+}
+
+.recents a, .favorites a{
+    color: #F5C500;
+}
+
+.card
+{
+    background-color: #222;
+    border: 1px solid #F5C500;
+
+}
+
+.card-header{
+    background-color: #343434;
+    color:#F5C500;
+    font-weight:bold;
+    text-align: center;
+    border-bottom: 1px solid #F5C500;
+}
+
+.card-content{
+    background-color: #222;
+    color: white;
+}
+
+.card-content text{
+    color:white;
+}
+
+.widget_plus{
+    display:none;
+}
+
+.intro-section{
+    display:none;
+}
+
+.stat-chiffre{
+    background-color: #222;
+    border: #222;
+}
+
+.stat {
+    background-color: #222;
+    border: #222;
+}
+
+#sidebar-header
+{
+    order:1;
+}
+
+.dropDownLink a{
+    color:black;
 }
 
 /*==================== 
@@ -189,7 +286,7 @@ transition: all 250ms ease-in-out 0s;
 .mail a {
   text-decoration: none;
   color: #fff;
-}
+} 
  .mail a:hover{
   color: #F5C500;
 }
@@ -237,6 +334,7 @@ footer{
   to   {transform: translateY(15px);}
 }
 
+
   
 /*==================== 
 pop up
@@ -255,3 +353,114 @@ pop up
   }
 
   
+
+/*====================
+	Blog part
+====================== */
+.wrapBlog {
+    background: white;
+    color: black;
+    width: 100%;
+    font-size: 1.3em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.blog-slide-title
+{
+    background: #252525;
+    width: 100%;
+    color: white;
+}
+.titleBlog
+{
+ color: #252525;
+}
+.parasingl
+{
+    color: white!important;
+
+}
+.parasingl a
+{
+    color: white!important;
+}
+.navigsingle a
+{
+    color: white;
+    font-size: 2em;
+}
+.navigsingle
+{
+    color: #F5C500;
+   background: #252525;
+}
+.paratitl
+{
+    color: #F5C500;
+
+}
+.paratitl
+{
+    border: solid #F5C500;
+}
+.commentsingle
+{
+ color:  #F5C500;
+}
+.commentsingle p {
+    color: white;
+    font-size: 1.3em;
+}
+.site {
+    background: #252525;
+}
+.navigsingle a:hover
+{
+    color:  #F5C500;
+    font-size: 2em;
+}
+
+
+
+/* --------------------------
+    Login/Signup Forms
+   --------------------------- */
+
+   form {
+    border:#F5C500 .1px solid;
+    color:#F5C500;
+}
+form h3 {
+    margin: 3rem auto;
+    padding: 0 auto;
+}
+small {
+    color:#F0E68C!important;
+}
+form label{
+    margin-top: 3rem;
+}
+.form-control{
+    margin: 0 auto;
+    width:80%!important;
+}
+form .btn{
+    margin: 5rem auto;
+    width:40%;
+    border:none;
+}
+form .dropdown-divider{
+    border:#F5C500 1px solid;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
+a:hover, a:active
+{
+    color:black;
+    text-decoration:none;
+    cursor:pointer;
+}
+

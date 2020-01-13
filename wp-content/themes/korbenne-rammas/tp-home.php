@@ -4,65 +4,62 @@
 
 <div id="map-container">
 
-    <div class="leftSide">
-
-        <div>
-            <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=1412&f=5"></script>
+    <div class="leftSide d-flex m-auto">
+        <div class="euStats justify-content-center m-auto">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">KILOS DE VERRE RECYCLÉ EN FRANCE</div>
+                <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=1307&f=5"></script>
+            </div>
         </div>
 
-        <div class="favorites">
-            <h3>Mes Korbennes favorites</h1>
-                <ul>
-                    <li class="korbfav">
-                        <a href="#">Korbenne 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Korbenne 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Korbenne 3</a>
-                    </li>
-                    <li>
-                        <a href="#">Korbenne 4</a>
-                    </li>
-                    <li>
-                        <a href="#">Korbenne 5</a>
-                    </li>
+        <div class="recents d-flex justify-content-center m-5">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">MES KORBENNES RÉCENTES</div>
+                <ul class="list-group list-group-flush">
+                    <li class="card-content list-group-item text-left">Korbenne 1 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 2 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 3 <a href="#"><i class="far fa-star ml-5"></i></a></li>
                 </ul>
+            </div>
+        </div>
 
+        <div class="favorites d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">MES KORBENNES FAVORITES</div>
+                <ul class="list-group list-group-flush">
+                    <li class="card-content list-group-item text-left">Korbenne 1 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 2 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 3 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card m-5 text-left" style="width: 18rem;">
+            <div class="card-header">MODIFIER LA CARTE</div>
+            <div id='menu'>
+                <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
+                <label for='streets'>Rues</label></br>
+                <input id='light-v10' type='radio' name='rtoggle' value='light'>
+                <label for='light'>Thème jour</label></br>
+                <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
+                <label for='dark'>Thème nuit</label></br>
+                <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
+                <label for='outdoors'>Outdoors</label></br>
+                <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
+                <label for='satellite'>Vue Satellite</label>
+            </div>
         </div>
 
     </div>
-
     <div id='map'"></div>
-
 </div>
-
-        <div id='menu'>
-            <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
-            <label for='streets'>Rues</label>
-            <input id='light-v10' type='radio' name='rtoggle' value='light'>
-            <label for='light'>Thème jour</label>
-            <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
-            <label for='dark'>Thème nuit</label>
-            <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
-            <label for='outdoors'>Outdoors</label>
-            <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
-            <label for='satellite'>Vue Satellite</label>
-            <div class=" optioon"><input class="optioon" type="button" value="Add to favorites"></div>
-         
-</div>
-
-
-
-
 <script>
     // Initialise la map
     mapboxgl.accessToken = 'pk.eyJ1IjoiaG1lZGluaG8iLCJhIjoiY2szaDJieTZyMDdpNjNjcXRjaHU2cjkwdSJ9.--0qzHNFfaujaTjlMCeSjw';
     var map = new mapboxgl.Map({
         container: 'map', // container id
         style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-        center: [-74.50, 40], // starting position [lng, lat]
+        center: [3.8833, 43.6], // starting position [lng, lat]
         zoom: 9 // starting zoom
     });
 
@@ -88,16 +85,13 @@
     // changer le style de la carte
     var layerList = document.getElementById('menu');
     var inputs = layerList.getElementsByTagName('input');
-
     function switchLayer(layer) {
         var layerId = layer.target.id;
         map.setStyle('mapbox://styles/mapbox/' + layerId);
     }
-
     for (var i = 0; i < inputs.length; i++) {
         inputs[i].onclick = switchLayer;
     }
-
     // ajout d'icon sur montpellier
     var geojson = {
         "type": "FeatureCollection",
@@ -6414,10 +6408,8 @@
             }
         ]
     }
-
     // add markers to map
     geojson.features.forEach(function(marker) {
-
         // create a DOM element for the marker
         var el = document.createElement('div');
         el.setAttribute("id", "mykorb");
@@ -6425,7 +6417,6 @@
         el.style.backgroundImage = 'url(wp-content/themes/korbenne-rammas/assets/img/bottles.png)';
         el.style.width = '24px';
         el.style.height = '40px';
-        
         el.addEventListener('click', function() {
             var propre = ('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + '</p>');
             var myWindow = window.open("", "MsgWindow", "width=200,height=100");
@@ -6434,7 +6425,8 @@
            console.log(propre);
         });
 
-        // add marker to map
+// add marker to map
+
         new mapboxgl.Marker(el)
             .setLngLat(marker.geometry.coordinates)
             .setPopup(new mapboxgl.Popup({
@@ -6444,20 +6436,7 @@
                 .setHTML('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + '</p>    <div class=" option"><input class="option" type="button" value="Add to favorites"></div>  <li><a class="poire" href="https://example.com">Website</a></li>'))
                 .addTo(map);
 
-
     });
-
-    // // interactions
-    // document.getElementById('listing-group')
-    //     .addEventListener('change', function(e) {
-    //         var handler = e.target.id;
-    //         if (e.target.checked) {
-    //             map[handler].enable();
-    //         } else {
-    //             map[handler].disable();
-    //         }
-    //     });
-
     // Direction
     map.addControl(
         new MapboxDirections({
@@ -6471,3 +6450,4 @@
 </script>
 
 <?php get_footer();
+
