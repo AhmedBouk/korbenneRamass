@@ -95,7 +95,7 @@ __Installation WordPress__
     * cliquer sur __Enregistrer les modifications__
 
 
-__Auteurs__
+## __Auteurs__
 
 
 * [Ahmed Bouknana ](https://github.com/AhmedBouk) - Chef de projet
