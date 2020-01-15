@@ -2,11 +2,11 @@
 
 __KorbenneRamass est un projet scolaire de la NFactory School. Cette plateforme permet aux utilisateurs de se géolocaliser et de trouver les bennes à verre sur montpellier. Un GPS est implémenté pour leur donner la direction .__
 
-#  GETTING STARTED
+# Procédure
 
 __Ces instructions vous fourniront une copie du projet opérationnel sur votre ordinateur local à des fins de développement et de test.__
 
-## titre Prerequisites
+## Prérequis
 *  Mysql
 * Worpress
 * Projet Benne à intégrer
@@ -34,19 +34,23 @@ __Création de la base de donnée__
 
 __Installation WordPress__ 
 
-* cliqué sur __C'est parti!__
-* Nom de la base de données : __korbenneramass__              
-* Identifiant : __root__                                                                                                                                                   
-* Mot de passe : __laissé vide__    
-* Adresse de la base de données : __laissé localhost__    
-* Préfixe des tables : __kbr_ .__   
-* cliqué sur __Lancer l'installation__    
-* Titre du site: __KorbenneRamass'__    
-* Identifiant : __choisissez un identifiant à vous__    
-* Mot de passe : __choisissez un mot de passe__    
-* Votre adresse de messagerie : __renseigner votre adresse mail__    
-* Visibilité pour les moteurs de recherche: __vérifier que la case n'est pas séléctionné, si oui déséléctionner la__    
-* cliqué sur __Installer Wordpress__   
+1. cliqué sur __C'est parti!__
+
+    * Nom de la base de données : __korbenneramass__              
+    * Identifiant : __root__                                 
+    * Mot de passe : __laissé vide__    
+    * Adresse de la base de données : __laissé localhost__    
+    * Préfixe des tables : __kbr_ .__   
+
+2. cliqué sur __Lancer l'installation__   
+
+    * Titre du site: __KorbenneRamass'__    
+    * Identifiant : __choisissez un identifiant à vous__    
+    * Mot de passe : __choisissez un mot de passe__    
+    * Votre adresse de messagerie : __renseigner votre adresse mail__    
+    * Visibilité pour les moteurs de recherche: __vérifier que la case n'est pas séléctionné, si oui déséléctionner la__    
+
+3. cliqué sur __Installer Wordpress__   
 
 __Connexion WordPress__    
     
