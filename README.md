@@ -34,7 +34,7 @@ __Création de la base de donnée__
 
 __Installation WordPress__ 
 
-1. cliqué sur __C'est parti!__
+1. cliquer sur __C'est parti!__
 
     * Nom de la base de données : __korbenneramass__              
     * Identifiant : __root__                                 
@@ -54,15 +54,20 @@ __Installation WordPress__
 
 ## __Connexion WordPress__    
     
-* Connectez-vous avec vos identifiants, vous arriverez dans le dashboard de WordPress.    
+#### Connectez-vous avec vos identifiants, vous arriverez dans le dashboard de WordPress.    
 
-1. cliqué sur __Pages__    
+##### Page
 
-    * Creer des Pages en cliquant sur __Ajouter__ :     
+1. cliquer sur __Pages__    
 
-## __Procédure__    
-     
-Saisissez le titre de la Page et la relier avec son modèle.     
+    * Creer des Pages en cliquant sur __Ajouter__.   
+    
+## __Pages à creer__   
+
+* Home    
+* Blog   
+* Login  
+* Signup  
 
 ## __Exemple__     
 
@@ -72,23 +77,22 @@ Saisissez le titre de la Page et la relier avec son modèle.
     * Colone de droite séléctionner Document.    
     * Cliqué sur Attribut de page.    
     * Modèle : choisissez home .    
-    * Ensuite cliqué sur Publier.    
+    * Ensuite cliquer sur Publier.    
 
-## __Pages à creer__   
+##### procédure à faire pour toutes les pages.
 
-* Home    
-* Blog   
-* Login  
-* Signup  
+##### Apparence
 
-2. cliqué sur __Apparence__  
+2. cliquer sur __Apparence__  
 
     * choisissez l'apparence korbenne ramass 
 
-3. cliqué sur __Réglage__  séléctionner __Lecture__
+##### Réglage
+
+3. cliquer sur __Réglage__  séléctionner __Lecture__
     * La page d’accueil affiche : séléctionné une page statique 
     * Page d'accueil : choisissez Home
-    * cliqué sur __Enregistrer les modifications__
+    * cliquer sur __Enregistrer les modifications__
 
 
 __Auteurs__
