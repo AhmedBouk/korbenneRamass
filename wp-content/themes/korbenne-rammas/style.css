@@ -18,7 +18,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 ====================== */
 
 .navbar{
-  background-color: #252525;
+  background-color: #313131;
 }
 
 .navlink:active, .navlink:visited
@@ -74,6 +74,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   display: flex;
   flex-direction: column;
   clear:both;
+  z-index: 10;
 }
 
 /*==================== 
@@ -132,15 +133,13 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 {
     background-color: #222;
     border: 1px solid #F5C500;
-
 }
 
 .card-header{
-    background-color: #343434;
-    color:#F5C500;
+    background-color: #F5C500;
+    color:#222;
     font-weight:bold;
     text-align: center;
-    border-bottom: 1px solid #F5C500;
 }
 
 .card-content{
@@ -210,7 +209,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 ====================== */
 
 /* Main Footer */
-footer .main-footer{	padding: 20px 0;	background: #252525;}
+footer .main-footer{	padding: 20px 0;	background: #313131;}
 footer ul{	padding-left: 0;	list-style: none;}
 
 /* Copy Right Footer */
@@ -224,7 +223,7 @@ footer ul{	padding-left: 0;	list-style: none;}
 .footer-copyright p {	color: #F5C500;	margin: 2px 0 0;}
 
 /* Footer Top */
-.footer-top{	background: #252525;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
+.footer-top{	background: #313131;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
 
 /* Footer transparent */
 footer.transparent .footer-top, footer.transparent .main-footer{	background: transparent;}
@@ -303,7 +302,7 @@ transition: all 250ms ease-in-out 0s;
 body, html{height:100%;}
 body{
   text-align:center;
-  background-color: #252525;
+  background-color: #313131;
 }
 
 #main{
@@ -347,13 +346,13 @@ footer{
 
 .blog-slide-title
 {
-    background: #252525;
+    background: #313131;
     width: 100%;
     color: white;
 }
 .titleBlog
 {
- color: #252525;
+ color: #313131;
 }
 .parasingl
 {
@@ -372,7 +371,7 @@ footer{
 .navigsingle
 {
     color: #F5C500;
-   background: #252525;
+   background: #313131;
 }
 .paratitl
 {
@@ -392,7 +391,7 @@ footer{
     font-size: 1.3em;
 }
 .site {
-    background: #252525;
+    background: #313131;
 }
 .navigsingle a:hover
 {
