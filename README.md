@@ -15,24 +15,24 @@ __Ces instructions vous fourniront une copie du projet opérationnel sur votre o
 
 __La procedure étapes par étapes pour installer le projet en devellopement__
 
-__## Télécharger WordPress__
+__Télécharger WordPress__
 
 * [WordPresse](https://fr.wordpress.org/)!
 
-__## Cloner le Git__
+__Cloner le Git__
 
 * https://github.com/AhmedBouk/korbenneRamass.git
 
-__## Extraction Wordpress__
+__Extraction Wordpress__
 
 * Extraire votre dossier WordPress téléchargé dans le dossier cloner sauf le dossier __wp-content__
 
-__## Création de la base de donnée__
+__Création de la base de donnée__
 
 * lancer phpmyadmin
 * créer votre base nom : __korbenneramass__ et choisissez __utf8_general_ci__
 
-__## Installation WordPress__ 
+__Installation WordPress__ 
 
 * cliqué sur __C'est parti!__
 * Nom de la base de données : __korbenneramass__              
@@ -48,7 +48,7 @@ __## Installation WordPress__
 * Visibilité pour les moteurs de recherche: __vérifier que la case n'est pas séléctionné, si oui déséléctionner la__    
 * cliqué sur __Installer Wordpress__   
 
-__## Connexion WordPress__    
+__Connexion WordPress__    
     
 * Connectez-vous avec vos identifiants, vous arriverez dans le dashboard de WordPress.    
 
@@ -56,11 +56,11 @@ __## Connexion WordPress__
 
 * Creer des Pages en cliquant sur __Ajouter__ :     
 
-__## Procédure__    
+__Procédure__    
      
 * Saisissez le titre de la Page et la relier avec son modèle.     
 
-__##titre Exemple__     
+__Exemple__     
 
 * Création de la page Home.      
 
@@ -70,7 +70,7 @@ __##titre Exemple__
 * Modèle : choisissez home .    
 * Ensuite cliqué sur Publier.    
 
-__##titre Pages à creer__   
+__Pages à creer__   
 
 * Home    
 * Blog   
@@ -87,4 +87,4 @@ __##titre Pages à creer__
 * cliqué sur __Enregistrer les modifications__
 
 
-__##titre Auteurs__
+__Auteurs__
