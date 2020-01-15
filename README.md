@@ -2,7 +2,7 @@
 
 __KorbenneRamass est un projet scolaire de la NFactory School. Cette plateforme permet aux utilisateurs de se géolocaliser et de trouver les bennes à verre sur montpellier. Un GPS est implémenté pour leur donner la direction .__
 
-#titre GETTING STARTED
+#titre h1 GETTING STARTED
 
 __Ces instructions vous fourniront une copie du projet opérationnel sur votre ordinateur local à des fins de développement et de test.__
 
