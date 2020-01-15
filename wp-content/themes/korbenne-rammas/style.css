@@ -333,6 +333,35 @@ footer{
   to   {transform: translateY(15px);}
 }
 
+
+  
+/*==================== 
+pop up
+====================== */
+  /* .mapboxgl-popup {
+    max-width: 500px;
+    background:red;
+  } */
+  
+  .mapboxgl-popup-content {
+  
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    background: yellow;
+    border: 4mm ridge #f2e66a;
+    width: 250px;
+    
+  }
+
+  .info{
+      font-weight: bold ;
+      font-size: 1.5em;
+  }
+  .infoMarker{
+      text-transform: capitalize;
+      font-size: 1.5em;
+  }
+
 /*====================
 	Blog part
 ====================== */
@@ -344,16 +373,6 @@ footer{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-.blog-slide-title
-{
-    background: #313131;
-    width: 100%;
-    color: white;
-}
-.titleBlog
-{
- color: #313131;
-}
 .parasingl
 {
     color: white!important;
@@ -399,7 +418,27 @@ footer{
     font-size: 2em;
 }
 
-
+.blogtitlte
+{
+  font-size: 48px;
+  text-shadow: -1px -1px #f00, 1px 1px #a00, -3px 0 4px #000;
+  font-family:"Segoe print", Arial, Helvetica, sans-serif;
+  color: #F5C500;
+  padding:64px 0 0 0;
+  margin:16px auto;
+  font-weight:lighter;
+  -moz-box-shadow:none;  
+  -webkit-box-shadow: none;  
+  box-shadow:none;  
+  text-align:center;
+  display:block;
+  /* min-height:300px;
+  min-width:800;
+  max-height:100px;
+  max-width:800px;  
+  background-image:url(assets/img/taxi.png);
+  background-repeat: no-repeat; */
+}
 
 /* --------------------------
     Login/Signup Forms
@@ -442,3 +481,4 @@ a:hover, a:active
     text-decoration:none;
     cursor:pointer;
 }
+

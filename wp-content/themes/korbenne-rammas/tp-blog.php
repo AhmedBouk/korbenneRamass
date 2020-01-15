@@ -3,8 +3,8 @@
 <?php get_header(); ?>
 
     <div class="wrapBlog"
-        <section class="row">
-            <h2 class="titleBlog"><span class="title-focus">Korbenne Actu</span></h2>
+        <section class="row ">
+          <h2 class="blogtitlte wow bounceInUp" data-wow-duration="4s" data-wow-delay="2s"><span class="title-focus "><img src="<?php echo get_template_directory_uri();?> /assets/img/taxi.png" alt="korbenne taxi" height="80" width="80">   Korbenne Actu   <img src="<?php echo get_template_directory_uri();?> /assets/img/taxi.png" alt="korbenne taxi" height="80" width="80"></span></h2>
             <div class="blog-flexslider flexslider">
                 <ul class="slides">
                     <?php //
@@ -22,7 +22,7 @@
                             <li class="blog-slide">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col mt-5">
+                                        <div class="col mt-5 wow bounceInRight "data-wow-duration="4s" data-wow-delay="2s">
                                             <?= the_post_thumbnail('blogpart') ?>
                                             <p class="blog-slide-info">
                                                 Publié le: <?= get_the_date() ?><br>
@@ -30,8 +30,8 @@
                                             </p>
                                         </div>
                                         <div class="col mt-3 ">
-                                            <h3 class="blog-slide-title"><?= get_the_title(); ?></h3>
-                                            <p class="blog-slide-text"><?= get_the_excerpt() ?><a href="<?= get_the_permalink() ?>"title=""> Voir la suite</a></p>
+                                            <h3 class="blogtitlte wow bounceInUp"data-wow-duration="4s" data-wow-delay="4s"><?= get_the_title(); ?></h3>
+                                            <p class="blog-slide-text wow fadeInRightBig"data-wow-duration="4s" data-wow-delay="4s"><?= get_the_excerpt() ?><a href="<?= get_the_permalink() ?>"title=""> Voir la suite</a></p>
                                         </div>
                                     </div>
                             </li>
@@ -39,33 +39,6 @@
                     }; ?>
                 </ul>
                 <?php wp_reset_postdata(); ;?>
-            </div>
-
-
-
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Launch demo modal
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </div>
