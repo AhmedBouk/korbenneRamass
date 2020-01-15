@@ -52,43 +52,43 @@ __Installation WordPress__
 
 3. cliqué sur __Installer Wordpress__   
 
-__Connexion WordPress__    
+## __Connexion WordPress__    
     
 * Connectez-vous avec vos identifiants, vous arriverez dans le dashboard de WordPress.    
 
-* cliqué sur __Pages__    
+1. cliqué sur __Pages__    
 
-* Creer des Pages en cliquant sur __Ajouter__ :     
+    * Creer des Pages en cliquant sur __Ajouter__ :     
 
-__Procédure__    
+## __Procédure__    
      
-* Saisissez le titre de la Page et la relier avec son modèle.     
+Saisissez le titre de la Page et la relier avec son modèle.     
 
-__Exemple__     
+## __Exemple__     
 
 * Création de la page Home.      
 
-* Titre : Home.     
-* Colone de droite séléctionner Document.    
-* Cliqué sur Attribut de page.    
-* Modèle : choisissez home .    
-* Ensuite cliqué sur Publier.    
+    * Titre : Home.     
+    * Colone de droite séléctionner Document.    
+    * Cliqué sur Attribut de page.    
+    * Modèle : choisissez home .    
+    * Ensuite cliqué sur Publier.    
 
-__Pages à creer__   
+## __Pages à creer__   
 
 * Home    
 * Blog   
 * Login  
 * Signup  
 
-* cliqué sur __Apparence__  
+2. cliqué sur __Apparence__  
 
-* choisissez l'apparence korbenne ramass 
+    * choisissez l'apparence korbenne ramass 
 
-* cliqué sur __Réglage__  séléctionner __Lecture__
-* La page d’accueil affiche : séléctionné une page statique 
-* Page d'accueil : choisissez Home
-* cliqué sur __Enregistrer les modifications__
+3. cliqué sur __Réglage__  séléctionner __Lecture__
+    * La page d’accueil affiche : séléctionné une page statique 
+    * Page d'accueil : choisissez Home
+    * cliqué sur __Enregistrer les modifications__
 
 
 __Auteurs__
