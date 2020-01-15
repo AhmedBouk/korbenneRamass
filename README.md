@@ -17,7 +17,7 @@ __La procedure étapes par étapes pour installer le projet en devellopement__
 
 __Télécharger WordPress__
 
-* [WordPresse](https://fr.wordpress.org/)!
+* [WordPress](https://fr.wordpress.org/)!
 
 __Cloner le Git__
 
@@ -96,3 +96,9 @@ __Installation WordPress__
 
 
 __Auteurs__
+
+
+* [Ahmed Bouknana ](https://github.com/AhmedBouk) - Chef de projet
+* [Guillaume Gauthier ](https://github.com/gauthierguillaume) - Developpeur
+* [Nicolas Becuwe ](https://github.com/NikoFLK) - Developpeur
+* [Paul Turpin ](https://github.com/Druxys) - Developpeur
