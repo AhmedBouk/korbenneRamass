@@ -56,7 +56,7 @@ __Installation WordPress__
     
 #### Connectez-vous avec vos identifiants, vous arriverez dans le dashboard de WordPress.    
 
-##### Page
+### Page
 
 1. cliquer sur __Pages__    
 
@@ -81,13 +81,13 @@ __Installation WordPress__
 
 ##### procédure à faire pour toutes les pages.
 
-##### Apparence
+### Apparence
 
 2. cliquer sur __Apparence__  
 
     * choisissez l'apparence korbenne ramass 
 
-##### Réglage
+### Réglage
 
 3. cliquer sur __Réglage__  séléctionner __Lecture__
     * La page d’accueil affiche : séléctionné une page statique 
