@@ -15,4 +15,5 @@
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> <!--Totally optional :) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href= "<?php echo get_template_directory_uri(); ?> /assets/css/dashboardstyle.css">
+    <script src="https://kit.fontawesome.com/48bce604ac.js" crossorigin="anonymous"></script>
 </head>

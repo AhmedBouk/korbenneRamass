@@ -7,13 +7,16 @@
     border-color: 
     #F5C500;
 }
- hover:border-blue-500 {
-    background-color: #F5C500;
+
+.md\:text-gray-400 {
+    color: 
+    #F5C500;
 }
-hover:bg-blue-400
-{
-    background-color: #F5C500;
+.bg-blue-800 {
+  background-color: 
+  #F5C500;
 }
-hover:border-blue-500{
-    background-color: #F5C500;
+.bg-gray-900 {
+  background-color: 
+  #313131;
 }
