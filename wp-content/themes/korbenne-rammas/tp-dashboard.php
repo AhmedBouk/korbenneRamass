@@ -9,7 +9,7 @@
         <div class="flex flex-wrap items-center">
             <div class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white">
                 <a href="#">
-                    <span class="text-xl pl-2"> <img src="<?php echo get_template_directory_uri();?> /assets/img/taxi.png" alt="korbenne taxi" height="40" width="60"></span>
+                    <span class="text-xl pl-2">   <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('/'));?>"><img src="<?php echo get_template_directory_uri();?> /assets/img/taxi.png" alt="korbenne taxi" height="40" width="60"><span class="sr-only">(current)</span></a></span>
                 </a>
             </div>
         </div>
