@@ -29,7 +29,7 @@
                                                 Posté par: <?= get_the_author() ?>
                                             </p>
                                         </div>
-                                        <div class="col mt-3 ">
+                                        <div class="col ">
                                             <h3 class="blogtitlte wow bounceInUp"data-wow-duration="4s" data-wow-delay="4s"><?= get_the_title(); ?></h3>
                                             <p class="blog-slide-text wow fadeInRightBig"data-wow-duration="4s" data-wow-delay="4s"><?= get_the_excerpt() ?><a href="<?= get_the_permalink() ?>"title=""> Voir la suite</a></p>
                                         </div>

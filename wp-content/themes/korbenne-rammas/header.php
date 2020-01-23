@@ -47,8 +47,9 @@
 			</audio>
 
                 <img class="logo" onmouseover="play();" src="<?php echo get_template_directory_uri(); ?> /assets/img/Korbenne-ramass.png" width="260" height="130" onclick="displaySidebar()">
-                <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('/'));?>">ACCUEIL <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('Blog'));?>">BLOG</a>
+                <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('/'));?>">Accueil<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('Blog'));?>">Blog</a>
+                <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('Dashboard'));?>">Dashboard</a>
                 <div class="dropdown ml-md-auto">
                 <a class="nav-item nav-link dropdown-toggle navlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ME CONNECTER</a>
                 <div class="nav-item dropdown-menu dropDown" aria-labelledby="navbarDropdown">
