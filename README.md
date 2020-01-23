@@ -1,104 +1,106 @@
-# korbenneRamass
+# KorbenneRamass
 
-__KorbenneRamass est un projet scolaire de la NFactory School. Cette plateforme permet aux utilisateurs de se géolocaliser et de trouver les bennes à verre sur montpellier. Un GPS est implémenté pour leur donner la direction .__
+__KorbenneRamass is a student project by Nfactory School. Its purpose is to help users finding and going to the closest Glass Dumpster in the city of Montpellier. It comes with an implemented GPS for geolocation.__
 
-# Procédure
+# How it Works
 
 __Ces instructions vous fourniront une copie du projet opérationnel sur votre ordinateur local à des fins de développement et de test.__
 
-## Prérequis
+__These instructions will help you to get a local working copy of the project for development and tests issues.__
+
+## Prerequisites
 *  Mysql
 * Worpress
-* Projet Benne à intégrer
+* Benne project for integration
 
-## Installation
+## Install
 
-__La procedure étapes par étapes pour installer le projet en devellopement__
+__Step by step procedure to install and run the project__
 
-__Télécharger WordPress__
+__Download WordPress__
 
 * [WordPress](https://fr.wordpress.org/)!
 
-__Cloner le Git__
+__Clone the git repository
 
 * https://github.com/AhmedBouk/korbenneRamass.git
 
-__Extraction Wordpress__
+__Extract Wordpress__
 
-* Extraire votre dossier WordPress téléchargé dans le dossier cloner sauf le dossier __wp-content__
+* Extract the wordpress directory into the cloned directory except for the __wp-content__ part.
 
-__Création de la base de donnée__
+__Database creation__
 
-* lancer phpmyadmin
-* créer votre base nom : __korbenneramass__ et choisissez __utf8_general_ci__
+* Launch PHPMyAdmin
+* Create a database and name it : __korbenneramass__ then choose __utf8_general_ci__
 
-__Installation WordPress__ 
+__Install WordPress__ 
 
-1. cliquer sur __C'est parti!__
+1. Click on __C'est parti!__
 
-    * Nom de la base de données : __korbenneramass__              
-    * Identifiant : __root__                                 
-    * Mot de passe : __laissé vide__    
-    * Adresse de la base de données : __laissé localhost__    
-    * Préfixe des tables : __kbr_ .__   
+    * Database : __korbenneramass__              
+    * Login : __root__                                 
+    * Password : __laissé vide__    
+    * Database address : __laissé localhost__    
+    * Tables prefix : __kbr_ .__   
 
-2. cliqué sur __Lancer l'installation__   
+2. Click on __Lancer l'installation__   
 
-    * Titre du site: __KorbenneRamass'__    
-    * Identifiant : __choisissez un identifiant à vous__    
-    * Mot de passe : __choisissez un mot de passe__    
-    * Votre adresse de messagerie : __renseigner votre adresse mail__    
-    * Visibilité pour les moteurs de recherche: __vérifier que la case n'est pas séléctionné, si oui déséléctionner la__    
+    * Website Title : __KorbenneRamass'__    
+    * Login : __Choose your own Id.__    
+    * Password : __Choose your own password.__    
+    * Your email address : __Choose your own email address.__    
+    * Browsers accessibility: __Verify that the checkbox is unchecked, and uncheck it if not.__    
 
-3. cliqué sur __Installer Wordpress__   
+3. Click on __Installer Wordpress__   
 
-## __Connexion WordPress__    
+## __WordPress Connection__    
     
-#### Connectez-vous avec vos identifiants, vous arriverez dans le dashboard de WordPress.    
+#### Connect with your previously defined Id to be grannted access to Wordpress Dashboard.    
 
-### Page
+### Pages
 
-1. cliquer sur __Pages__    
+1. Click on __Pages__    
 
-    * Creer des Pages en cliquant sur __Ajouter__.   
+    * Create new pages by clicking __Ajouter__.   
     
-## __Pages à creer__   
+## __Pages to be created__   
 
 * Home    
 * Blog   
 * Login  
 * Signup  
 
-## __Exemple__     
+## __Example__     
 
-* Création de la page Home.      
+* Home page creation.      
 
-    * Titre : Home.     
-    * Colone de droite séléctionner Document.    
-    * Cliqué sur Attribut de page.    
-    * Modèle : choisissez home .    
-    * Ensuite cliquer sur Publier.    
+    * Title : Home.     
+    * Select "document" in the left column.    
+    * Click on __Attribut de page.__    
+    * Model : choose home .    
+    * Then publish it by clicking the __publish__ button.    
 
-##### procédure à faire pour toutes les pages.
+##### This has to be done for every single page.
 
-### Apparence
+### Appearance
 
-2. cliquer sur __Apparence__  
+2. Click on __Apparence__  
 
-    * choisissez l'apparence korbenne ramass 
+    * Choose the Korbenne Ramass appearance
 
-### Réglage
+### Settings
 
-3. cliquer sur __Réglage__  séléctionner __Lecture__
-    * La page d’accueil affiche : séléctionné une page statique 
-    * Page d'accueil : choisissez Home
-    * cliquer sur __Enregistrer les modifications__
-
-
-## __Auteurs__
+3. Click on __Réglage__  and select __Lecture__
+    * choose : __sélectionnez une page statique__ for the Homepage 
+    * Home page : choose Home
+    * Click on __Enregistrer les modifications__
 
 
-* [Ahmed Bouknana ](https://github.com/AhmedBouk) - Chef de projet
-* [Guillaume Gauthier ](https://github.com/gauthierguillaume) - Developpeur
-* [Nicolas Becuwe ](https://github.com/NikoFLK) - Developpeur
-* [Paul Turpin ](https://github.com/Druxys) - Developpeur
+## __Authors__
+
+
+* [Ahmed Bouknana ](https://github.com/AhmedBouk) - Project Manager
+* [Guillaume Gauthier ](https://github.com/gauthierguillaume) - Developper
+* [Nicolas Becuwe ](https://github.com/NikoFLK) - Developper
+* [Paul Turpin ](https://github.com/Druxys) - Developper
