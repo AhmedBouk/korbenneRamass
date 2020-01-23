@@ -4,7 +4,7 @@ __KorbenneRamass is a student project by Nfactory School. Its purpose is to help
 
 # How it Works
 
-__Ces instructions vous fourniront une copie du projet opérationnel sur votre ordinateur local à des fins de développement et de test.__
+
 
 __These instructions will help you to get a local working copy of the project for development and tests issues.__
 
@@ -21,7 +21,7 @@ __Download WordPress__
 
 * [WordPress](https://fr.wordpress.org/)!
 
-__Clone the git repository
+__Clone the git repository__
 
 * https://github.com/AhmedBouk/korbenneRamass.git
 
