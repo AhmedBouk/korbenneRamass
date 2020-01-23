@@ -6417,9 +6417,9 @@
         var el = document.createElement('div');
         el.setAttribute("id", "mykorb");
         el.className = 'marker';
-        el.style.backgroundImage = 'url(wp-content/themes/korbenne-rammas/assets/img/bottles.png)';
-        el.style.width = '24px';
-        el.style.height = '40px';
+        el.style.backgroundImage = 'url(wp-content/themes/korbenne-rammas/assets/img/bottle.png)';
+        el.style.width = '14px';
+        el.style.height = '35px';
         el.addEventListener('click', function() {
             var propre = ('<h3>' + marker.properties.rue + '</h3><p>' + marker.properties.type + "  " + marker.geometry.coordinates + '</p><button id="benne">ajouté</button>');
             var myWindow = window.open("", "MsgWindow", "width=200,height=100");
