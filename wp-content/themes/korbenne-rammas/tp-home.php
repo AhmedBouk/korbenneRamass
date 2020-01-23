@@ -16,7 +16,9 @@
             <div class="card" style="width: 18rem;">
                 <div class="card-header">MES KORBENNES RÉCENTES</div>
                 <ul class="list-group list-group-flush">
-            
+                    <li class="card-content list-group-item text-left">Korbenne 1 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 2 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 3 <a href="#"><i class="far fa-star ml-5"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -24,8 +26,10 @@
         <div class="favorites d-flex justify-content-center">
             <div class="card" style="width: 18rem;">
                 <div class="card-header">MES KORBENNES FAVORITES</div>
-                <ul class="list-group list-group-flush favBen">
-           
+                <ul class="list-group list-group-flush">
+                    <li class="card-content list-group-item text-left">Korbenne 1 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 2 <a href="#"><i class="far fa-star ml-5"></i></a></li>
+                    <li class="card-content list-group-item text-left">Korbenne 3 <a href="#"><i class="far fa-star ml-5"></i></a></li>
                 </ul>
             </div>
         </div>
