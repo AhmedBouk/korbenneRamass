@@ -8,51 +8,57 @@
  *
  * @package KORBENNE_RAMMAS\'
  */
-
 ?>
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+  	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href= "<?php echo get_template_directory_uri(); ?> /style.css">
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css' type='text/css' />    
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href= "<?php echo get_template_directory_uri(); ?> /assets/css/animate.css">
+    <script type="text/javascript" src="<?php echo get_template_directory_uri();?> /inc/js/sound.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js'></script>
+	<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js"></script>
+	<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css" type="text/css"/>
+    <script src="<?php echo get_template_directory_uri();?> /assets/js/wow.min.js"></script>
+             
+    <?php wp_head(); ?>
+    <script>
+             new WOW().init();
+     </script>
 </head>
 
-<body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'korbenne-rammas' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$korbenne_rammas_description = get_bloginfo( 'description', 'display' );
-			if ( $korbenne_rammas_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $korbenne_rammas_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'korbenne-rammas' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		<nav class="navbar navbar-expand-md navbar-dark">
+			<audio id="audio">
+				<source src="<?php echo get_template_directory_uri(); ?>/klaxon-SF.mp3">
+			</audio>
 
-	<div id="content" class="site-content">
+                <img class="logo" onmouseover="play();" src="<?php echo get_template_directory_uri(); ?> /assets/img/Korbenne-ramass.png" width="260" height="130" onclick="displaySidebar()">
+                <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('/'));?>">Accueil<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('Blog'));?>">Blog</a>
+                <a class="nav-item nav-link navlink" href="<?php echo esc_url(home_url('Dashboard'));?>">Dashboard</a>
+                <div class="dropdown ml-md-auto">
+                <a class="nav-item nav-link dropdown-toggle navlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ME CONNECTER</a>
+                <div class="nav-item dropdown-menu dropDown" aria-labelledby="navbarDropdown">
+                    <a href="<?php echo esc_url(home_url('login'));?>" class="dropDownLink dropdown-item" >CONNEXION</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="<?php echo esc_url(home_url('signup'));?>" class="dropDownLink dropdown-item">INSCRIPTION</a>
+                </div>
+            </div>
+
+        </nav>
+	</header>
+</div>
